@@ -4,15 +4,10 @@ import requests
 
 app = Flask(__name__)
 
-valid_hosts = {
-    'rev-proxy.csaw.io' : 'site',
-    'localhost' : 'localhost', # for debugging
-}
-
 
 @app.route('/')
 @app.route('/<path:path>')
-def route_all(path):
+def route_all(path='index.html'):
     host = request.headers.get('host', default=None)
     x_real_ip = request.headers.get('x-real-ip', default=None)
     ip = request.remote_addr
@@ -25,7 +20,7 @@ def route_all(path):
     if host == 'flag':
         return flag
 
-    if host != 'rev-proxy.csaw.io':
+    if host != 'web.red.chal.csaw.io':
         return '404 page not found', 404
 
     return render_template(path)
