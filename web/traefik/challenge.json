@@ -1,0 +1,10 @@
+{
+  "name": "Traefik",
+  "description": "hint: Try to learn how traefik routes requests.\n\nhttp://{box}:{port}",
+  "points": 300,
+  "internal_port": 5000,
+  "box": "web.red.chal.csaw.io",
+  "category": "web",
+  "flag": "flag{flag{81rD5_@RnT_r3@1!!!!!}}",
+  "files": ["docker-compose.yml"]
+}
