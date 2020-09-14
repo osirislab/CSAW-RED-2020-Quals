@@ -1,0 +1,2 @@
+Vigenere solver tool available at: https://www.guballa.de/vigenere-solver
+Or any other frequency analysis tools

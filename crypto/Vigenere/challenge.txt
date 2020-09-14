@@ -1,0 +1,7 @@
+plaintext = "Apple cider vinegar is mostly apple juice, but adding yeast turns the sugar in the juice into alcohol. This is a process called fermentation. Bacteria turn the alcohol into acetic acid. That’s what gives vinegar its sour taste and strong smell. Hey you know which cipher sounds like vinegar? Vigenere! Here's your flag: flag{V1g3n3re_C1ph3r}"
+
+key = "breakthis"
+
+Vigenere encryption tool used: https://www.dcode.fr/vigenere-cipher#1
+
+ciphertext = "Bgtlo vplws mmnozhz at dssdef ihqci jebjm, tvk ednbuo qfrwt dnyvk uyi sezhz ao kle tnpkw jexo kejwzpc. Xhsl pa s qiscolz ksmcid pxyuwoketshu. Jsdkirst acjo kle kejwzpc mndh hkwuzg ambk. Bzbk’w wrta oawvw vsgloss zxs chbz lbjxe kgk alsfrg cfltd. Ivc yyn rvgx nlima jqhivv synulk mzoe fbumybi? Ziqxumjf! Yiro'l fwms wpaq: ysiy{W1x3r3ro_V1wp3j}"
