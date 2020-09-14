@@ -1,0 +1,11 @@
+{
+  "name": "<INSERT>",
+  "category": "web",
+  "author": "<INSERT>",
+  "description": "<INSERT> \n\n[http://{box}:{port}](http://{box}:{port})",
+  "points": <INSERT>,
+  "internal_port": <INSERT>,
+  "box": "web.chal.csaw.io",
+  "flag": "<INSERT>",
+  "files": ["<INSERT>"]
+}
