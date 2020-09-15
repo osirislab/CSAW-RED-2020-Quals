@@ -7,6 +7,7 @@ RUN pip3 install -r ./requirements.txt \
   && useradd -M chal
 
 COPY app.py app.py
+COPY flag.txt flag.txt
 
 RUN mv flag.txt /flag.txt \
   && chmod 444 /flag.txt \
