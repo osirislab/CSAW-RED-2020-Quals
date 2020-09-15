@@ -1,0 +1,1 @@
+flag{rce_is_a_fun_thing}
