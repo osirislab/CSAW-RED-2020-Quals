@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "7": "^0.0.1",
+    "koa": "^2.13.0",
+    "koa-logger": "^3.2.1",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "run": "node index.js",
+    "debug": "npx nodemon --watch index.js"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "traverse 2",
+  "category": "web",
+  "author": "John Cunniff",
+  "description": "Go now, traverse again. The flag is at `/flag.txt`. \n\n[http://{box}:{port}](http://{box}:{port})",
+  "points": 75,
+  "internal_port": 5000,
+  "box": "web.chal.csaw.io",
+  "flag": "flag{that_one_was_a_bit_harder_but_there_is_one_more...}",
+  "files": ["index.js"]
+}
