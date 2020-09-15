@@ -16,7 +16,7 @@ Koajs app that listens on port 5000
 
 # Flag
 
-`flag{that_one_was_a_bit_harder_but_there_is_one_more...}`
+`flag{I_must_yield_you_have_proven_yourself_a_dedicated_hacker}`
 
 # Solution
 > As detailed as possible description of the solution. Not just the solver script. As full a description as possible of the solution for the challenge.
