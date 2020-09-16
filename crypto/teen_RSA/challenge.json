@@ -4,6 +4,6 @@
     "description": "RSA's angsty alternative phase is here.",
     "flag": "flag{really_s1ck_algor1thm}",
     "points": 150,
-    "files": ["teenrsa.py", "output.txt"]
+    "files": ["teenrsa.py", "output.txt"],
     "box": "crypto.red.csaw.io"
 }

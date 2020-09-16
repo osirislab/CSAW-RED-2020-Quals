@@ -4,6 +4,6 @@
   "description": "Crack the ciphertext to learn how apple cider vinegar is made!",
   "flag": "flag{V1g3n3re_C1ph3r}",
   "points": 100,
-  "files": ["ciphertext.txt"]
+  "files": ["ciphertext.txt"],
   "box": "cryto.red.csaw.io"
 }
