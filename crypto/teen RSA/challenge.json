@@ -1,0 +1,10 @@
+  {
+    "name": "Teen RSA",
+    "category": "crypto",
+    "description": "RSA's angsty alternative phase is here.",
+    "flag": "flag{really_s1ck_algor1thm}",
+    "points": 150,
+    "box": "misc.chal.csaw.io",
+    "internal_port": 5000,
+    "files": ["teenrsa.py", "output.txt"]
+}
