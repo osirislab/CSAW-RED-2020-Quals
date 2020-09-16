@@ -1,7 +1,7 @@
 {
     "name":"Level 1 Spellcode",
     "category":"pwn",
-    "description":"Welcome Level 1 wizard! Write your own spellcode to pwn your way to the wizards' lab. (Attribution: the \"spellcode\" idea is not original, see sourcery.pwnadventure.com (not part of the challenge.) For shellcoding references and examples, see \"Hacking: the Art of Exploitation\" by Jon Erickson or reference shell-storm.org/shellcode. `nc {box} {port}`",
+    "description":"Welcome Level 1 wizard! Write your own spellcode to pwn your way to the wizards' lab. (Attribution: the \"spellcode\" idea is not original, see sourcery.pwnadventure.com (not part of the challenge.) For shellcoding references and examples, see \"Hacking: the Art of Exploitation\" by Jon Erickson or reference shell-storm.org/shellcode. For D&D (challenge) questions, ping N4T_20 in Discord. `nc {box} {port}`",
     "flag":"flag{w3lc0m3_t0_sh3llc0d1ng!!!}",
     "points":100,
     "files":["level_1_spellcode", "level_1_spellcode.c"],
