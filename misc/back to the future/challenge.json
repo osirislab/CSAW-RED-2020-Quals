@@ -1,0 +1,9 @@
+{
+    "name": "Back to the Future",
+    "category": "misc",
+    "description": "Where we're going...",
+    "flag": "flag{one.21_gigawatts!??!}",
+    "points": 50,
+    "box": "misc.chal.csaw.io",
+    "internal_port": 5000
+}
