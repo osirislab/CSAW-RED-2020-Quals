@@ -5,5 +5,6 @@
     "flag": "flag{sT@y_s@F3}",
     "points": 50,
     "box": "misc.chal.csaw.io",
-    "internal_port": 5000
+    "internal_port": 5000,
+    "files": ["alert.png"]
 }
