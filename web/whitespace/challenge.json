@@ -1,0 +1,11 @@
+{
+  "name": "whitespace",
+  "category": "web",
+  "author": "John Cunniff",
+  "description": "I think I handled the authentication correctly here... \n\n[http://{box}:{port}](http://{box}:{port})",
+  "points": 200,
+  "internal_port": 5000,
+  "box": "web.chal.csaw.io",
+  "flag": "flag{gotta_make_sure_you_handle_the_whitespace!}",
+  "files": ["app.py"]
+}
