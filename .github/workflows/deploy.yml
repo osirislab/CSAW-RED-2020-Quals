@@ -13,42 +13,42 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build images
-        run: ctfdbot build web.chal.csaw.io .
+        run: ctfdbot build web.red.csaw.io .
       - name: update ctfd
-        run: ctfdbot update web.chal.csaw.io .
+        run: ctfdbot update web.red.csaw.io .
       - name: deploy containers
-        run: ctfdbot deploy web.chal.csaw.io
+        run: ctfdbot deploy web.red.csaw.io
         
   deploy-pwn:
     runs-on: ["self-hosted", "pwn-chal"]
     steps:
       - uses: actions/checkout@v2
       - name: build images
-        run: ctfdbot build pwn.chal.csaw.io .
+        run: ctfdbot build pwn.red.csaw.io .
       - name: update ctfd
-        run: ctfdbot update pwn.chal.csaw.io .
+        run: ctfdbot update pwn.red.csaw.io .
       - name: deploy containers
-        run: ctfdbot deploy pwn.chal.csaw.io
+        run: ctfdbot deploy pwn.red.csaw.io
                 
   deploy-rev:
     runs-on: ["self-hosted", "rev-chal"]
     steps:
       - uses: actions/checkout@v2
       - name: build images
-        run: ctfdbot build rev.chal.csaw.io .
+        run: ctfdbot build rev.red.csaw.io .
       - name: update ctfd
-        run: ctfdbot update rev.chal.csaw.io .
+        run: ctfdbot update rev.red.csaw.io .
       - name: deploy containers
-        run: ctfdbot deploy rev.chal.csaw.io
+        run: ctfdbot deploy rev.red.csaw.io
                 
   deploy-crypto:
     runs-on: ["self-hosted", "crypto-chal"]
     steps:
       - uses: actions/checkout@v2
       - name: build images
-        run: ctfdbot build crypto.chal.csaw.io .
+        run: ctfdbot build crypto.red.csaw.io .
       - name: update ctfd
-        run: ctfdbot update crypto.chal.csaw.io .
+        run: ctfdbot update crypto.red.csaw.io .
       - name: deploy containers
-        run: ctfdbot deploy crypto.chal.csaw.io
+        run: ctfdbot deploy crypto.red.csaw.io
         
