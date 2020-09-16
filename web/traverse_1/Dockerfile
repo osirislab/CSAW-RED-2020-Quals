@@ -13,4 +13,4 @@ RUN mv flag.txt /flag.txt \
   && chmod 444 ./index.js
 USER node
 
-CMD node index.js
+CMD yarn run run
