@@ -5,7 +5,7 @@
   "description": "Only robots can find my treasure \n\n[http://{box}:{port}](http://{box}:{port})",
   "points": 50,
   "internal_port": 5000,
-  "box": "web.chal.csaw.io",
+  "box": "web.red.csaw.io",
   "flag": "flag{welcome_to_website_hacking}",
   "files": []
 }

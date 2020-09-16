@@ -5,7 +5,7 @@
   "description": "Go now, traverse. The flag is at `/flag.txt`. \n\n[http://{box}:{port}](http://{box}:{port})",
   "points": 50,
   "internal_port": 5000,
-  "box": "web.chal.csaw.io",
+  "box": "web.red.csaw.io",
   "flag": "flag{wow_you_got_it!_lets_see_if_you_can_get_the_next_one...}",
   "files": ["index.js"]
 }

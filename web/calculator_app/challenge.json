@@ -5,7 +5,7 @@
   "description": "I just made my first website! Its just a simple calculator. I dont really know what I'm doing, can you help me test it? \n\n The flag is at `/flag.txt`. \n\n[http://{box}:{port}](http://{box}:{port})",
   "points": 50,
   "internal_port": 5000,
-  "box": "web.chal.csaw.io",
+  "box": "web.red.csaw.io",
   "flag": "flag{rce_is_a_fun_thing}",
   "files": ["index.js"]
 }
