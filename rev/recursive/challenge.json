@@ -5,6 +5,6 @@
     "flag": "flag{r3Curs1Ve_Rev3rSe}}",
     "points": 150,
     "box": "rev.chal.csaw.io",
-    "internal_port": 5000
-	"files": ["recursive"]
+    "internal_port": 5000,
+    "files": ["recursive"]
 }
