@@ -5,6 +5,6 @@
     "flag": "flag{really_s1ck_algor1thm}",
     "points": 50,
     "box": "misc.chal.csaw.io",
-    "internal_port": 5000
+    "internal_port": 5000,
     "files": ["babyrsa.py", "output.txt"]
 }
