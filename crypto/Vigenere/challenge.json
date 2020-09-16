@@ -5,4 +5,5 @@
   "flag": "flag{V1g3n3re_C1ph3r}",
   "points": 100,
   "files": ["ciphertext.txt"]
+  "box": "cryto.red.csaw.io"
 }
