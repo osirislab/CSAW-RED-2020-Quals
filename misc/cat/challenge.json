@@ -1,0 +1,9 @@
+{
+    "name": "Cat",
+    "category": "misc",
+    "description": "Your cat is hiding your flag.",
+    "flag": "flag{Y0U_f0unD_h4PPy_cat_FL4G}",
+    "points": 50,
+    "box": "misc.chal.csaw.io",
+    "internal_port": 5000
+}
