@@ -5,5 +5,6 @@
     "flag": "flag{Y0U_f0unD_h4PPy_cat_FL4G}",
     "points": 50,
     "box": "misc.chal.csaw.io",
-    "internal_port": 5000
+    "internal_port": 5000,
+    "files": ["happy_cat.jpeg"]
 }
