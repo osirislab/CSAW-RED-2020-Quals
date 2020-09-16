@@ -1,0 +1,1 @@
+gcc -m32 -fno-stack-protector -z execstack -fno-pie -no-pie level_1_spellcode.c -o level_1_spellcode
