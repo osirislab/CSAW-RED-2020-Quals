@@ -1,8 +1,8 @@
   {
     "name": "Teen RSA",
     "category": "crypto",
-    "description": "RSA's angsty alternative phase is here.",
-    "flag": "flag{really_s1ck_algor1thm}",
+    "description": "RSA, Teeny!",
+    "flag": "flag{where_did_my_primes_go?}",
     "points": 150,
     "files": ["teenrsa.py", "output.txt"],
     "box": "crypto.red.csaw.io"
