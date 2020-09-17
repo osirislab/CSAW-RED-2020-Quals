@@ -5,7 +5,7 @@
 > Distribute: helpme
 
 # Description
-> Detailed description as it would need to be explained to other lab members
+> Basic stack overflow to binsh function.
 
 <INSERT>
 
@@ -14,12 +14,12 @@
 
 <INSERT>
 
-# Flag
+# FLAG - flag{U_g07_5h311!\_wh4t_A_h4xor!}
 
 <INSERT>
 
 # Solution
-> As detailed as possible description of the solution. Not just the solver script. As full a description as possible of the solution for the challenge.
+> Overflow to get the address of binsh function on the stack. Drop to interactive and cat the flag. 
 
 
 # Potential Breakage

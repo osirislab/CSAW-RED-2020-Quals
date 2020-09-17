@@ -2,7 +2,7 @@
   "name": "guessy",
   "category": "pwn",
   "author": "Kaitlyn",
-  "description": "<INSERT> \n\n`nc {box} {port}`",
+  "description": "No-one has ever guessed my favorite numbers. Can you? \n\n`nc {box} {port}`",
   "points": 100,
   "internal_port": 5000,
   "box": "pwn.red.csaw.io",
