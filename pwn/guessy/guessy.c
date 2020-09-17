@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#define FLAGBUF = 40
-#define INPUTBUF = 32
-#define OOPS = 56
+#define FLAGBUF 40
+#define INPUTBUF 32
+#define OOPS 56
 
 void all_I_do_is_win(int no, int matter, int what) {
 
@@ -17,17 +18,17 @@ void all_I_do_is_win(int no, int matter, int what) {
 	fgets(buf,FLAGBUF,f);
 
 	if (no != 0x600DC0DE){
-    Printf("Not quite.\n")
+    printf("Not quite.\n");
     return;
 	}
 
 	if (matter != 0xACCE5515){
-    Printf("You're getting there...\n")
+    printf("You're getting there...\n");
     return;
 	}
 
     if (what != 0xFEA51B1E){
-    printf("So close!\n")
+    printf("So close!\n");
     return;
 	}
 

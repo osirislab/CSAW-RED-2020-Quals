@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define FLAGBUF = 40
-#define INPUTBUF = 32
+#define FLAGBUF 40
+#define INPUTBUF 32
 
 void binsh() {
 	system("/bin/sh");
@@ -14,8 +14,8 @@ void init() {
 int main() {
 	char buf[INPUTBUF];
 	init();
-	puts("I can never remember the command to open flag files... Can you do it for me? \n> ");
+	printf("I can never remember the command to open flag files... \nCan you do it for me? \n> ");
 	gets(buf);
-	printf("Hmm... Why didn't that work?\n");
+	printf("Hmm... Well that didn't work...\n");
 	return 0;
 }
