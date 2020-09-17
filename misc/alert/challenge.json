@@ -3,6 +3,6 @@
     "category": "misc",
     "description": "It seems that this file is 'missing' something...",
     "flag": "flag{sT@y_s@F3}",
-    "points": 50,
+    "points": 75,
     "files": ["alert.png"]
 }
