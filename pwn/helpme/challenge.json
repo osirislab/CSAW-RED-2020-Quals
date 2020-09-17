@@ -1,0 +1,11 @@
+{
+  "name": "helpme",
+  "category": "pwn",
+  "author": "Kaitlyn",
+  "description": "<INSERT> \n\n`nc {box} {port}`",
+  "points": 50,
+  "internal_port": 5000,
+  "box": "pwn.chal.csaw.io",
+  "flag": "flag{U_g07_5h311!_wh4t_A_h4xor!}",
+  "files": ["helpme"]
+}
