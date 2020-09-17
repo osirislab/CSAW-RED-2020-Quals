@@ -3,6 +3,6 @@
     "category": "crypto",
     "description": "RSA, Teeny!",
     "flag": "flag{where_did_my_primes_go?}",
-    "points": 150,
+    "points": 200,
     "files": ["teenrsa.py", "output.txt"]
 }

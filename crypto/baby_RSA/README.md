@@ -1,7 +1,7 @@
 # baby-RSA
 
 > Category: crypto
-> Suggested Points: 50
+> Suggested Points: 100
 
 # Description
 > Simple RSA challenge
