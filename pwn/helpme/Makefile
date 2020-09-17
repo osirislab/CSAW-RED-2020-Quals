@@ -1,4 +1,4 @@
 CC := gcc
-CFLAGS := -Wall -no-pie
+CFLAGS := -Wall -no-pie -fno-stack-protector
 
 all: helpme

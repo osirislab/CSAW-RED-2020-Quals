@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define FLAGBUF 40
 #define INPUTBUF 32
 
 void binsh() {
