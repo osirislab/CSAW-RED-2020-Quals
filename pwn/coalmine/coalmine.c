@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <string.h> 
+#include <string.h>
 #include <stdlib.h>
 
 #define FLAGBUF 40
 #define INPUTBUF 32
 #define BIRDBUF 8
 
-char global_birdy[BIRDBUF]; 
+char global_birdy[BIRDBUF];
 
 void tweet_tweet() {
 	char buf[FLAGBUF];
@@ -39,6 +39,7 @@ int main() {
 	char birdy[BIRDBUF];
 	char buf[INPUTBUF];
 	init();
+  carry_bird_into_mine();
 	memcpy(birdy,global_birdy,BIRDBUF);
 	printf("Working in a coal mine is dangerous stuff. \nGood thing I've got my bird to protect me. \nCan you hear it singing? \n> ");
 	gets(buf);
