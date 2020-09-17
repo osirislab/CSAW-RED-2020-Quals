@@ -18,13 +18,16 @@ void winner_winner_chicken_dinner() {
 	exit(0);
 }
 
+void vuln(){
+	char buf[INPUTBUF];
+	gets(buf); //ruh-roh
+}
 
 int main() {
-	char buf[INPUTBUF];
 	setvbuf(stdout, NULL, _IONBF, 0);
 	puts("Welcome to the feast! \nThere's a delicious dinner waiting for you, if you can get to it!");
 	printf("> ");
-	gets(buf); //ruh-roh
+	vuln();
 	printf("Oh, not hungry? Maybe next time.");
 	return 0;
 }
