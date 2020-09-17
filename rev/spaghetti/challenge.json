@@ -6,5 +6,5 @@
     "points": 200,
     "box": "rev.red.csaw.io",
     "internal_port": 5000,
-    "files": ["recursive"]
+    "files": ["spaghetti.c"]
 }
