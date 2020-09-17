@@ -1,0 +1,8 @@
+{
+  "name": "Lens of Truth",
+  "category": "web",
+  "description": "Use the tools at your disposal to look a bit closer...",
+  "flag": "flag{s33k_th3_truth}",
+  "points": 50,
+  "files": ["index.html", "/static/image_1.png"]
+}
