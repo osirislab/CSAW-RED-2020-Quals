@@ -2,7 +2,7 @@
   "name": "Lens of Truth",
   "author": "Ian D",
   "category": "web",
-  "description": "Use the tools at your disposal to look a bit closer...",
+  "description": "Use the tools at your disposal to look a bit closer...\n\n[http://{box}:{port}/](http://{box}:{port}/)",
   "flag": "flag{s33k_th3_truth}",
   "box": "web.red.csaw.io",
   "internal_port": 80,
