@@ -15,7 +15,7 @@ if local:
         #p = process('./feast')
         p = remote('localhost', 8000)
 else:
-    p = remote('pwn.chal.csaw.io', 1002)
+    p = remote('pwn.chal.csaw.io', 5001)
 
 e = ELF('./feast')
 #print("win is at " + hex(e.sym['winner_winner_chicken_dinner']))
