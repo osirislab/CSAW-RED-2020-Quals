@@ -2,7 +2,7 @@
   "name": "helpme",
   "category": "pwn",
   "author": "Kaitlyn",
-  "description": "A young'un like you must be a tech whiz. \nCan you show me how to use this here computer? \n\n`nc {box} {port}`",
+  "description": "A young'un like you must be a tech whiz. \nCan you show me how to use this here computer? (This is a 64 bit program) \n\n`nc {box} {port}`",
   "points": 50,
   "internal_port": 5000,
   "box": "pwn.red.csaw.io",
