@@ -3,7 +3,7 @@
   "category": "rev",
   "author": "Alan Campbell",
   "description": "Onions have layers. Recursions have layers. \n\n `nc {box} {port}`",
-  "flag": "flag{r3Curs1Ve_Rev3rSe}}",
+  "flag": "flag{r3Curs1Ve_Rev3rSe}",
   "points": 150,
   "box": "rev.red.csaw.io",
   "internal_port": 5000,
