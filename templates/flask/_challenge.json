@@ -5,7 +5,7 @@
   "description": "<INSERT> \n\n[http://{box}:{port}](http://{box}:{port})",
   "points": <INSERT>,
   "internal_port": <INSERT>,
-  "box": "web.chal.csaw.io",
+  "box": "web.red.csaw.io",
   "flag": "<INSERT>",
   "files": ["<INSERT>"]
 }
