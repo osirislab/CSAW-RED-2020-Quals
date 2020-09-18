@@ -13,7 +13,7 @@ if local:
             ''')
     else:
         #p = process('./feast')
-        p = remote('localhost', 8000)
+        p = remote('localhost', 5000)
 else:
     p = remote('pwn.chal.csaw.io', 5001)
 

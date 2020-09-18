@@ -1,25 +1,15 @@
-FROM ubuntu:18.04
-MAINTAINER K$
+FROM debian:stretch
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y apt-utils gcc-multilib build-essential socat
+RUN apt update && apt install -y socat libc6-i386 && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -ms /bin/sh feast
+RUN useradd -M chal
 
-WORKDIR /home/feast
+WORKDIR /opt/chal
 
-COPY feast.c ./
-COPY ./Makefile ./
-RUN make
-COPY ./run.sh ./
+COPY feast .
 COPY flag.txt .
 
-RUN chown -R root:feast /home/feast && \
-    chmod 750 /home/feast && \
-    chown root:feast /home/feast/flag.txt && \
-    chmod 555 /home/feast/feast && \
-    chmod 440 /home/feast/flag.txt
+RUN chmod 444 flag.txt && chmod 555 feast
 
-EXPOSE 8000
-
-USER feast
-CMD ["socat", "-T60", "TCP-LISTEN:8000,reuseaddr,forever,fork", "EXEC:/home/feast/feast,stderr"]
+USER chal
+CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:./feast"]
