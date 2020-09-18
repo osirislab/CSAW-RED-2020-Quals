@@ -83,7 +83,6 @@ void remove_friend()
     if (friend_type[index] != 0)
         free(friend_list[index]->identity.name);
     free(friend_list[index]);
-    //friend_list[index] = 0;
 
     puts("Your friend was removed");
 }
@@ -106,9 +105,7 @@ void edit_friend()
     if (friend_type[index] != 0)
     {
         puts("What is their new name?");
-        //scanf("%s", friend_list[index]->identity.name);
         fgets(friend_list[index]->identity.name, NAME_LENGTH, stdin);
-        //friend_list[index]->identity.name[strcspn(friend_list[index]->identity.name, "\n")] = 0;
     } else
     {
         puts("What is their new barcode?");

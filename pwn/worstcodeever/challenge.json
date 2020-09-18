@@ -1,0 +1,10 @@
+{
+    "name": "worstcodeever",
+    "category": "pwn",
+    "description": "my friend writes some bad code",
+    "flag": "flag{d03s_s0urc3_3v3n_h3lp}",
+    "points": 250,
+    "box": "pwn.red.csaw.io",
+    "internal_port": 8000,
+    "files": ["worstcodeever", "worstcodeever.c", "Makefile"]
+}
