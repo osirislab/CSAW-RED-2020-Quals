@@ -1,0 +1,9 @@
+{
+  "name": "unary, binary, ...",
+  "category": "crypto",
+  "description": "",
+  "flag": "flag{n1c3_RPS_sk1llz}",
+  "points": 100,
+  "files": ["challenge.pdf"],
+  "box": "crypto.red.csaw.io"
+}
