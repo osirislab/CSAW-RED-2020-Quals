@@ -2,9 +2,9 @@
   "name": "alert",
   "author": "Ray",
   "category": "misc",
-  "description": "It seems that this file is 'missing' something...",
+  "description": "Something's not square about this image...",
   "flag": "flag{sT@y_s@F3}",
   "box": "web.red.csaw.io",
-  "points": 75,
+  "points": 150,
   "files": ["alert.png"]
 }
