@@ -1,7 +1,7 @@
 # guessy
 
 > Category: pwn
-> Suggested Points: 50
+> Suggested Points: 100
 > Distribute: guessy
 
 # Description
