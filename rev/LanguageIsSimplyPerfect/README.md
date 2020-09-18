@@ -9,12 +9,16 @@ A source code reversing challenge written in ANSI Common LISP. The solver needs 
 
 
 # Challenge code to show:
-(defun &(n)(if(< n |)n(+ (&(- n 1))(&(- n |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
+(defun &(~)(if(< ~ |)~(+ (&(- ~ 1))(&(- ~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
 
 
 # Challenge public text:
 
-"During our CS archaeology quest we stumbled across this partially corrupted magnetic tape that seems to contain some code of the ancients. Apparently during the read-out two numbers have been replaced with the non-executing characters '|'' and '$'. Which integers do these two need to become to make the code return the value 832040?"
+"During our CS archaeology quest we stumbled across this partially corrupted magnetic tape that seems to contain some code of the ancients:
+
+(defun &(~)(if(< ~ |)~(+ (&(- ~ 1))(&(- ~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
+
+Apparently during the read-out of the tape two numbers were replaced with the non-executing characters '|'' and '$'. Which integers do these two need to become to make the code return the value 832040?"
 
 Write the answer as flag{a,b} where “a” is the integer representing '|' and “b” is the integer representing '$'.
 
@@ -64,6 +68,9 @@ with the function name 'fib' replaced with '&'
 In compressed form, removing unnecessary whitespace it becomes:
 (defun &(n)(if(< n 2)n(+ (&(- n 1))(&(- n 2)))))
 
+where we can further obscure the variable 'n' as '\~' to get:
+(defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
+
 
 Calling the function with the value '30' gives:
 
@@ -110,18 +117,18 @@ We can then plug this into the '&' function call such as:
 
 Putting the two parts together we get:
 1. the compressed function definition:
-(defun &(n)(if(< n 2)n(+ (&(- n 1))(&(- n 2)))))
+(defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
 
 2. the compressed code calling of the function with the obscured number 30:
 (&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
 
 resulting in the code string:
-(defun &(n)(if(< n 2)n(+ (&(- n 1))(&(- n 2)))))(&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
+(defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))(&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
 
 
 In accordance with the challenge question we then replace the number '2' with '|' and the number '3' with '$' we get as the challenge code:
 
-(defun &(n)(if(< n |)n(+ (&(- n 1))(&(- n |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
+(defun &(\~)(if(< \~ |)\~(+ (&(- \~ 1))(&(- \~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
 
 Of course this code does not run as is since the two masking symbols '|' and '$' will have to be replaced with the correct integers first in order to run the code.
 
@@ -191,4 +198,18 @@ distribution for more information.
 30
 * (& (* (let((% 2)(@ 3))(* % @)) (let((^ 2)(! 3))(+ ^ !))))
 832040
+*
+
+
+Aeons-MacBook-Pro:LISP aeonflux$ sbcl
+This is SBCL 2.0.8, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (defun &(~)(if(< ~ 2)~(+ (&(- ~ 1))(&(- ~ 2)))))(&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
+&
+* 832040
 *
