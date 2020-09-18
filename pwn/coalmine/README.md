@@ -1,11 +1,11 @@
 # coalmine
 
 > Category: pwn
-> Suggested Points: 75
+> Suggested Points: 125
 > Distribute: coalmine
 
 # Description
-> Detailed description as it would need to be explained to other lab members
+> BOF with a fixed stack canary
 
 <INSERT>
 
@@ -14,12 +14,12 @@
 
 <INSERT>
 
-# Flag
+# Flag - flag{H0w_d1d_U_g37_pA5t_mY_B1rD???}
 
 <INSERT>
 
 # Solution
-> As detailed as possible description of the solution. Not just the solver script. As full a description as possible of the solution for the challenge.
+> Bruteforce the canary one byte at a time. Then overflow and put address of tweet_tweet on the stack. Celebrate.
 
 
 # Potential Breakage

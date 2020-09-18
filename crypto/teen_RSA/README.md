@@ -1,7 +1,7 @@
 # teen RSA
 
 > Category: crypto
-> Suggested Points: 100
+> Suggested Points: 200
 
 # Description
 > Detailed description as it would need to be explained to other lab members

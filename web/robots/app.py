@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, make_response
 
 app = Flask(__name__)
 
@@ -14,7 +14,9 @@ def index():
 
 @app.route('/robots.txt')
 def robot():
-    return robots
+    r = make_response(robots)
+    r.headers['Content-Type'] = 'text/plain'
+    return r
 
 @app.route('/super-duper-extra-secret-very-interesting')
 def flag():

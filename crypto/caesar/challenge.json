@@ -1,0 +1,9 @@
+{
+  "name": "Caesar, Salad Edition",
+  "category": "crypto",
+  "description": "Can you crypto a salad?",
+  "box": "crypto.red.csaw.io",
+  "flag": "flag{0lly_1s_th3_W3st3rosi_Brutu5}",
+  "points": 50,
+  "files": ["challenge.txt"]
+}

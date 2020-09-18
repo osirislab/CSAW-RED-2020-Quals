@@ -1,8 +1,10 @@
 {
-    "name": "alert",
-    "category": "misc",
-    "description": "It seems that this file is 'missing' something...",
-    "flag": "flag{sT@y_s@F3}",
-    "points": 75,
-    "files": ["alert.png"]
+  "name": "alert",
+  "author": "Yuanrui(Ray) Chen",
+  "category": "misc",
+  "description": "The picture probably needs to be squared away...",
+  "flag": "flag{sT@y_s@F3}",
+  "box": "web.red.csaw.io",
+  "points": 150,
+  "files": ["alert.png"]
 }

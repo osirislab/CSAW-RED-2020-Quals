@@ -1,6 +1,0 @@
-ciphertext = "yetz{vt35tk_5tetw_p1ma_vk0nm0gl}"
-encodedtext = "flag{ca35ar_5alad_w1th_cr0ut0ns}"
-
-shift = 19 
-
-Caesar solver tool (with numbers) available at: https://planetcalc.com/8572/.  Note this cipher depends on the alphabet "abcdefghijklmnopqrstuvwxyz0123456789"
