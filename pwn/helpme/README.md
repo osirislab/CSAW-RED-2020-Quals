@@ -14,7 +14,8 @@
 
 <INSERT>
 
-# FLAG - flag{U_g07_5h311!\_wh4t_A_h4xor!}
+# FLAG
+> flag{U_g07_5h311!\_wh4t_A_h4xor!}
 
 <INSERT>
 
