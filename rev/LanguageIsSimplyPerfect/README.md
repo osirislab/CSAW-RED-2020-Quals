@@ -66,9 +66,11 @@ Thus we can write the above function as:
 with the function name 'fib' replaced with '&'
 
 In compressed form, removing unnecessary whitespace it becomes:
+
         (defun &(n)(if(< n 2)n(+ (&(- n 1))(&(- n 2)))))
 
 where we can further obscure the variable 'n' as '\~' to get:
+
         (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
 
 
@@ -81,7 +83,9 @@ which is the 30th number in the fibonacci series.
 
 2. We can then further breakdown the number 30 into the product of two integers 5 and 6. So calling the function with:
 
-        (& (* 5 6)) also gives 832040.
+        (& (* 5 6))
+
+also gives 832040.
 
 [Note that LISP uses prefix notation for calculations, so 5*6=30 becomes '* 5 6' in LISP.]
 
