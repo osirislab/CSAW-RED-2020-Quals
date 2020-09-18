@@ -32,7 +32,7 @@ flag{2,3}.   (I guess this is too simple, not?)
 
 # Solution
 
-##Challenge explanation:
+## Challenge explanation:
 
 A simple code reversing challenge written in ANSI Common LISP.
 
@@ -46,30 +46,30 @@ Code breakdown:
 
 1. Function definition for the nth fibonacci number:
 
-    ;nth fibonacci number
-    (defun fib (n)
-      (if (< n 2)
-          n
-          (+ (fib (- n 1))
-             (fib (- n 2)))))
+        ;nth fibonacci number
+        (defun fib (n)
+          (if (< n 2)
+              n
+              (+ (fib (- n 1))
+                 (fib (- n 2)))))
 
 In LISP variable or function names can "consist of any number of alphanumeric characters other than whitespace, open and closing parentheses, double and single quotes, backslash, comma, colon, semicolon and vertical bar."
 
 Thus we can write the above function as:
 
-    (defun & (n)
-      (if (< n 2)
-          n
-          (+ (& (- n 1))
-             (& (- n 2)))))
+        (defun & (n)
+          (if (< n 2)
+              n
+              (+ (& (- n 1))
+                 (& (- n 2)))))
 
 with the function name 'fib' replaced with '&'
 
 In compressed form, removing unnecessary whitespace it becomes:
-    (defun &(n)(if(< n 2)n(+ (&(- n 1))(&(- n 2)))))
+        (defun &(n)(if(< n 2)n(+ (&(- n 1))(&(- n 2)))))
 
 where we can further obscure the variable 'n' as '\~' to get:
-    (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
+        (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
 
 
 Calling the function with the value '30' gives:
@@ -87,48 +87,48 @@ which is the 30th number in the fibonacci series.
 
 In LISP we can declare variables with the let command like this:
 
-    (let (
-          (x 1)
-          (y 5)
+        (let (
+              (x 1)
+              (y 5)
+             )
+             (+ x y)
          )
-         (+ x y)
-     )
 
 which, when compressed becomes this:
 
-    (let((x 1)(y 5))(+ x y))
+        (let((x 1)(y 5))(+ x y))
 
  and executes as the result '6'. Or we can get 6 by writing
 
-    (let((% 2)(@ 3))(* % @))
+        (let((% 2)(@ 3))(* % @))
 
 again replacing the clearly readable x and y variable names with more obscured characters '%' and '@'. We can then do the same for the number 5 also with obscure characters as variable names:
 
-    (let((^ 2)(! 3))(+ ^ !))
+        (let((^ 2)(! 3))(+ ^ !))
 
 So with these represations of the numbers 5 and 6 we can write our 5*6=30 or in LISP (*5 6) as:
 
-    ( * (let((% 2)(@ 3))(* % @)) (let((^ 2)(! 3)) (+ ^ !)) ) => 30
+        ( * (let((% 2)(@ 3))(* % @)) (let((^ 2)(! 3)) (+ ^ !)) ) => 30
 
 We can then plug this into the '&' function call such as:
 
-    (& (* (let((% 2)(@ 3))(* % @)) (let((^ 2)(! 3))(+ ^ !))))
+        (& (* (let((% 2)(@ 3))(* % @)) (let((^ 2)(! 3))(+ ^ !))))
 
 
 Putting the two parts together we get:
 1. the compressed function definition:
-    (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
+        (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
 
 2. the compressed code calling of the function with the obscured number 30:
-    (&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
+        (&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
 
 resulting in the code string:
-    (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))(&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
+        (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))(&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
 
 
 In accordance with the challenge question we then replace the number '2' with '|' and the number '3' with '$' we get as the challenge code:
 
-    (defun &(\~)(if(< \~ |)\~(+ (&(- \~ 1))(&(- \~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
+        (defun &(\~)(if(< \~ |)\~(+ (&(- \~ 1))(&(- \~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
 
 Of course this code does not run as is since the two masking symbols '|' and '$' will have to be replaced with the correct integers first in order to run the code.
 
@@ -151,10 +151,10 @@ or on Ubuntu with
 - about recursive function calls
 
 
-## As an alternative, add-on the challenge code could also be shown in hexadecimal representation of the ASCII characters.
+*** As an alternative, add-on the challenge code could also be shown in hexadecimal representation of the ASCII characters. ***
 
 
-#Author:
+# Author:
 Wolfgang R. von Stuermer, OSIRIS Lab, NYU Tandon, wvs215@nyu.edu, September 2020.
 
 
