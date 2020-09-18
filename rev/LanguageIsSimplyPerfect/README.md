@@ -46,7 +46,7 @@ Code breakdown:
 
 1. Function definition for the nth fibonacci number:
 
-;nth fibonacci number
+    ;nth fibonacci number
     (defun fib (n)
       (if (< n 2)
           n
@@ -74,21 +74,21 @@ where we can further obscure the variable 'n' as '\~' to get:
 
 Calling the function with the value '30' gives:
 
-    (& 30) => 832040
+        (& 30) => 832040
 
 which is the 30th number in the fibonacci series.
 
 
 2. We can then further breakdown the number 30 into the product of two integers 5 and 6. So calling the function with:
 
-    (& (* 5 6)) also gives 832040.
+        (& (* 5 6)) also gives 832040.
 
 [Note that LISP uses prefix notation for calculations, so 5*6=30 becomes '* 5 6' in LISP.]
 
 In LISP we can declare variables with the let command like this:
 
     (let (
-    	  (x 1)
+          (x 1)
           (y 5)
          )
          (+ x y)
