@@ -4,7 +4,7 @@
 from pwn import *
 from time import sleep
 
-local = True
+local = False
 debug = False
 if local:
     if debug:
@@ -17,7 +17,7 @@ if local:
         #p = process('/home/ctf/Documents/OSIRIS/REDDevRedemption/pwn/shellcode1/level_1_spellcode')
         p = remote('localhost', 8000)
 else:
-    p = remote('ctf.csaw.io', 8000)
+    p = remote('pwn.red.csaw.io', 5000)
 
 #sleep(15)
 # From Hacking: the Art of Exploitation, p. 298. An oldie but a goodie.
