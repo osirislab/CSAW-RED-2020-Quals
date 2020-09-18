@@ -1,17 +1,29 @@
-FROM debian:stretch
+FROM ubuntu:18.04
+MAINTAINER N4T_20
 
-RUN apt update && apt install -y socat && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get upgrade -y && apt-get install -y apt-utils gcc-multilib build-essential socat
 
-RUN useradd -M chal
+RUN useradd -ms /bin/sh coalmine
 
-WORKDIR /opt/chal
+WORKDIR /home/coalmine
 
-COPY coalmine .
+COPY coalmine.c ./
+COPY ./Makefile ./
+RUN make
+COPY ./run.sh ./
+COPY birdy.txt .
 COPY flag.txt .
+COPY credits.txt .
 
-RUN chmod 444 flag.txt && chmod 555 coalmine
+RUN chown -R root:coalmine /home/coalmine && \
+    chmod 750 /home/coalmine && \
+    chown root:coalmine /home/coalmine/flag.txt && \
+    chmod 555 /home/coalmine/coalmine && \
+    chmod 440 /home/coalmine/flag.txt
 
 EXPOSE 8000
 
-USER chal
-CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:./coalmine"]
+USER coalmine
+CMD ["socat", "-T60", "TCP-LISTEN:8000,reuseaddr,forever,fork", "EXEC:/home/coalmine/coalmine,stderr"]
+
+

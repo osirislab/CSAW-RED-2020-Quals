@@ -26,4 +26,5 @@
 # Potential Breakage
 > Potential places the challenge could break (not applicable to all challenges)
 
-
+# TODO
+Need to test that the exploit works properly on the CTFd server, and check that the port number is correct

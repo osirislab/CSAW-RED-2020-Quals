@@ -1,0 +1,1 @@
+Inspiration for this challenge is due to a PicoCTF challenge from a previous year. We are using it because of the particular instructional value of a simple canary brute-forcing challenge. Try PicoCTF at picoctf.com!

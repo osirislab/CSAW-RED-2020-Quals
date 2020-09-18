@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 #define FLAGBUF 40
 #define INPUTBUF 32
@@ -45,24 +46,16 @@ void name_it() {
    int x = 0;
    memcpy(birdy,global_birdy,BIRDBUF);
    printf("How many letters should its name have?\n> ");
-   while (x<INPUTBUF) {
-      read(0,length+x,1);
-      if (length[x]=='\n') break;
-      x++;
-   }
-
-   sscanf(length,"%d",&count);
-
-   printf("And what's the name? \n> ");
-
-   read(0,input,count);
-
-   if (memcmp(birdy,global_birdy,BIRDBUF)) {
-      printf("*** Dangerous Stack Activity Detected *** : Are you messing with my Canary?!\n");
-      exit(-1);
-   }
-
+   fgets(length, INPUTBUF, stdin);
+   count = atoi(length);
    
+   printf("And what's the name? \n> ");
+   read(0,input,count);
+   if (memcmp(birdy,global_birdy,BIRDBUF)) {
+      printf("*** Stack Smashing Detected *** : Are you messing with my canary?!\n");
+      exit(0);
+   }
+
    printf("Ok... its name is %s\n", input);
    fflush(stdout);
 }
@@ -73,7 +66,7 @@ int main() {
 	init();
   	carry_bird_into_mine();
 	printf("Working in a coal mine is dangerous stuff. \nGood thing I've got my bird to protect me. \n");
-	printf("Let give it a name.\n... \n");
+	printf("Let's give it a name.\n... \n");
 	name_it();
 	return 0;
 }

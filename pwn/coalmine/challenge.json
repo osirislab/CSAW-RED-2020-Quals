@@ -1,10 +1,10 @@
 {
   "name": "coalmine",
   "category": "pwn",
-  "author": "Kaitlyn",
+  "author": "Kaitlyn with testing and deployment by N4T_20",
   "description": "This bird will definitely protect me down in the mine. \n\n`nc {box} {port}`",
   "points": 125,
-  "internal_port": 5000,
+  "internal_port": 8000,
   "box": "pwn.red.csaw.io",
   "flag": "flag{H0w_d1d_U_g37_pA5t_mY_B1rD???}",
   "files": ["coalmine"]
