@@ -4,7 +4,7 @@
   "author": "Kaitlyn",
   "description": "No-one has ever guessed my favorite numbers. Can you? \n\n`nc {box} {port}`",
   "points": 100,
-  "internal_port": 5000,
+  "internal_port": 8000,
   "box": "pwn.red.csaw.io",
   "flag": "flag{w0w_R_y0u_A_m1nD_r34D3r?}",
   "files": ["actually_not_guessy"]
