@@ -1,0 +1,10 @@
+{
+	"name":"Header Start",
+	"category":"misc",
+	"author":"Andrew R.",
+	"description":"This challenge should give you a good picture of a warm up challenge...if only we could view it",
+	"flag":"flag{itZ_ju$7_A_w@Rm_Up}",
+	"points":25,
+	"files":["myImageFile"],
+	"box":"web.red.csaw.io"
+}

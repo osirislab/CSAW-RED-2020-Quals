@@ -1,20 +1,17 @@
-FROM ubuntu:18.04
+FROM debian:stretch
 
-RUN apt-get update && apt-get -y install socat libc6-dev
+RUN apt update && apt install -y socat && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -ms /bin/sh recursive
+RUN useradd -M chal
 
-WORKDIR /home/recursive
+WORKDIR /opt/chal
 
-COPY recursive
-COPY flag.txt
+COPY recursive .
+COPY flag.txt .
 
-RUN chown -R root:recursive /home/recursive && \
-    chmod 750  /home/recursive && \
-	chown root:recursive /home/recursive/flag.txt && \
-    chmod 440 /home/recursive/flag.txt && \
-	chown root:recursive /home/recursive/recursive && \
-    chmod 750 /home/recursive/recursive
-	
-EXPOSE 5000
-CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork,su=recursive", "EXEC:python3 /home/recursive/recursive,STDERR,pty,echo=0"]
+RUN chmod 444 flag.txt && chmod 555 recursive
+
+EXPOSE 8000
+
+USER chal
+CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:./recursive"]

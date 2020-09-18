@@ -1,7 +1,8 @@
 {
     "name":"prisonbreak",
     "category":"pwn",
-    "description":"Roll a natural 20 to escape from Profion's dungeon. For D&D (challenge) questions, ping N4T_20 in Discord. `nc {box} {port}`",
+    "author": "N4T_20",
+    "description":"Roll a natural 20 to escape from Profion's dungeon! `nc {box} {port}`",
     "flag":"flag{Y0u_s41d_th3_wr1t3_th1ng}",
     "points":125,
     "files":["prisonbreak", "prisonbreak.c"],
