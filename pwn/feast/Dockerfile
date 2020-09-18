@@ -12,4 +12,4 @@ COPY flag.txt .
 RUN chmod 444 flag.txt && chmod 555 feast
 
 USER chal
-CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:./feast"]
+CMD ["socat", "-T60", "TCP-LISTEN:8000,reuseaddr,fork","EXEC:./feast"]
