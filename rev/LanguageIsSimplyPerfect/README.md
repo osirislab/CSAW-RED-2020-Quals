@@ -88,7 +88,7 @@ which is the 30th number in the fibonacci series.
 
 also gives 832040.
 
-[Note that LISP uses prefix notation for calculations, so 5*6=30 becomes '* 5 6' in LISP.]
+        [Note that LISP uses prefix notation for calculations, so 5*6=30 becomes '* 5 6' in LISP.]
 
 In LISP we can declare variables with the let command like this:
 
@@ -111,9 +111,9 @@ again replacing the clearly readable x and y variable names with more obscured c
 
         (let((^ 2)(! 3))(+ ^ !))
 
-So with these represations of the numbers 5 and 6 we can write our 5*6=30 or in LISP (*5 6) as:
+        So with these represations of the numbers 5 and 6 we can write our 5*6=30 or in LISP (* 5 6) as:
 
-        ( * (let((% 2)(@ 3))(* % @)) (let((^ 2)(! 3)) (+ ^ !)) ) => 30
+        ( * (let((% 2)(@ 3))(* % @)) (let((^ 2)(! 3))(+ ^ !)) ) => 30
 
 We can then plug this into the '&' function call such as:
 
@@ -151,16 +151,15 @@ or on Ubuntu with
 
 	$ sudo apt-get install sbcl
 
+*** As an alternative, add-on the challenge code could also be shown in hexadecimal representation of the ASCII characters. ***
+
 
 ## Learnings from this challenge:
 - about the fibonacci number series
 - about the LISP Language syntax and the LISP Language in general
-- about hexadecimal represation of ASCII code
+- about hexadecimal represation of ASCII code (if that alternative is used)
 - about prefix notation (https://en.wikipedia.org/wiki/Polish_notation)
 - about recursive function calls
-
-
-*** As an alternative, add-on the challenge code could also be shown in hexadecimal representation of the ASCII characters. ***
 
 
 # Author:
