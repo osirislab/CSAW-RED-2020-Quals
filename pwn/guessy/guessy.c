@@ -40,11 +40,16 @@ void init() {
 	setvbuf(stdout, NULL, _IONBF, 0);
 }
 
-int main() {
+void vuln() {
 	char buf[INPUTBUF];
 	init();
 	puts("Would you like to play a game? \nIf you can guess my three favorite numbers...you win!");
 	fgets(buf, OOPS, stdin);
+	return;
+}
+
+int main() {
+	vuln();
 	printf("Those numbers are the worst!\n");
 	return 0;
 }
