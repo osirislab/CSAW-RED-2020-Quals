@@ -1,6 +1,0 @@
-encodedtext = "Congratulations on solving your first crytpo challenge, you should now be warmed up for harder tests. Progress to the next using flag{tak3_c4re_w1tH_fR13nD5_Nam3D_bRUTU5}"
-ciphertext = "V76zatcd4tc176b 76 b74e16z h7da y1abc vahc87 v0t44x6zx, h7d b07d4w 67f ux fta5xw d8 y7a 0tawxa cxbcb. 8a7zaxbb c7 c0x 6xgc db16z y4tz{ct3m_vnax_fkc0_yAkm6Wo_6t5mW_uADCDo}"
-
-shift = 19 
-
-Caesar solver tool (with numbers) available at: https://planetcalc.com/8572/.  Note this cipher depends on the alphabet "abcdefghijklmnopqrstuvwxyz0123456789"
