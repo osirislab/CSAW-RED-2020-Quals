@@ -1,8 +1,8 @@
 {
   "name": "alert",
-  "author": "Ray",
+  "author": "Yuanrui(Ray) Chen",
   "category": "misc",
-  "description": "Something's not square about this image...",
+  "description": "The picture probably needs to be squared away...",
   "flag": "flag{sT@y_s@F3}",
   "box": "web.red.csaw.io",
   "points": 150,
