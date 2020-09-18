@@ -7,5 +7,5 @@
     "points":125,
     "files":["prisonbreak", "prisonbreak.c"],
     "box": "pwn.red.csaw.io",
-    "internal_port": "8000"
+    "internal_port": 5000
 }

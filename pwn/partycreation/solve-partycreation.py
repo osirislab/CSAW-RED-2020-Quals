@@ -22,7 +22,7 @@ if local:
         # 0x400dc4 viewCharacter after input
     else:
         #p = process('./partycreation')
-        p = remote('localhost',8000)
+        p = remote('localhost',5000)
 else:
     p = remote('pwn.red.csaw.io', 5004)
 

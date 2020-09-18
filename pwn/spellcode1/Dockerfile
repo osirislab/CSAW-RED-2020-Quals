@@ -1,25 +1,17 @@
-FROM ubuntu:18.04
-MAINTAINER N4T_20
+FROM debian:stretch
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y apt-utils gcc-multilib build-essential socat
+RUN apt update && apt install -y socat libc6-i386 && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -ms /bin/sh spellcode1
+RUN useradd -M chal
 
-WORKDIR /home/spellcode1
+WORKDIR /opt/chal
 
-COPY level_1_spellcode.c ./
-COPY ./Makefile ./
-RUN make
-COPY ./run.sh ./
+COPY level_1_spellcode .
 COPY flag.txt .
 
-RUN chown -R root:spellcode1 /home/spellcode1 && \
-    chmod 750 /home/spellcode1 && \
-    chown root:spellcode1 /home/spellcode1/flag.txt && \
-    chmod 555 /home/spellcode1/level_1_spellcode && \
-    chmod 440 /home/spellcode1/flag.txt
+RUN chmod 444 flag.txt && chmod 555 level_1_spellcode
 
-EXPOSE 8000
+EXPOSE 5000
 
-USER spellcode1
-CMD ["socat", "-T60", "TCP-LISTEN:8000,reuseaddr,forever,fork", "EXEC:/home/spellcode1/level_1_spellcode,stderr"]
+USER chal
+CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:./level_1_spellcode"]

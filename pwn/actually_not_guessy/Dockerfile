@@ -1,24 +1,17 @@
-FROM ubuntu:18.04
-MAINTAINER N4T_20 and K$
+FROM debian:stretch
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y apt-utils gcc-multilib build-essential socat
+RUN apt update && apt install -y socat libc6-i386 && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -ms /bin/sh actually_not_guessy
+RUN useradd -M chal
 
-WORKDIR /home/actually_not_guessy
+WORKDIR /opt/chal
 
-COPY actually_not_guessy.c ./
-COPY ./Makefile ./
-RUN make
+COPY actually_not_guessy .
 COPY flag.txt .
 
-RUN chown -R root:actually_not_guessy /home/actually_not_guessy && \
-    chmod 750 /home/actually_not_guessy && \
-    chown root:actually_not_guessy /home/actually_not_guessy/flag.txt && \
-    chmod 555 /home/actually_not_guessy/actually_not_guessy && \
-    chmod 440 /home/actually_not_guessy/flag.txt
+RUN chmod 444 flag.txt && chmod 555 actually_not_guessy
 
-EXPOSE 8000
+EXPOSE 5000
 
-USER actually_not_guessy
-CMD ["socat", "-T60", "TCP-LISTEN:8000,reuseaddr,forever,fork", "EXEC:/home/actually_not_guessy/actually_not_guessy,stderr"]
+USER chal
+CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:./actually_not_guessy"]

@@ -6,7 +6,7 @@
 
 from pwn import *
 
-local = False
+local = True
 debug = False
 if local:
     if debug:
@@ -17,7 +17,7 @@ if local:
             ''')
     else:
         #p = process('./prisonbreak')
-        p = remote('localhost',8000)
+        p = remote('localhost',5000)
 else:
     p = remote('pwn.red.csaw.io', 5004)
 

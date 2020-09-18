@@ -7,5 +7,5 @@
     "points":250,
     "files":["partycreation.c", "partycreation", "libc-2.27.so"],
     "box": "pwn.chal.csaw.io",
-    "internal_port": "8000"
+    "internal_port": 5000
 }

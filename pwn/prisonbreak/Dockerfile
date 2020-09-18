@@ -1,25 +1,17 @@
-FROM ubuntu:18.04
-MAINTAINER N4T_20
+FROM debian:stretch
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y apt-utils build-essential socat
+RUN apt update && apt install -y socat libc6-i386 && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -ms /bin/sh prisonbreak
+RUN useradd -M chal
 
-WORKDIR /home/prisonbreak
+WORKDIR /opt/chal
 
-COPY prisonbreak.c ./
-COPY ./Makefile ./
-RUN make
-COPY ./run.sh ./
+COPY prisonbreak .
 COPY flag.txt .
 
-RUN chown -R root:prisonbreak /home/prisonbreak && \
-    chmod 750 /home/prisonbreak && \
-    chown root:prisonbreak /home/prisonbreak/flag.txt && \
-    chmod 555 /home/prisonbreak/prisonbreak && \
-    chmod 440 /home/prisonbreak/flag.txt
+RUN chmod 444 flag.txt && chmod 555 prisonbreak
 
-EXPOSE 8000
+EXPOSE 5000
 
-USER prisonbreak
-CMD ["socat", "-T60", "TCP-LISTEN:8000,reuseaddr,forever,fork", "EXEC:/home/prisonbreak/prisonbreak,stderr"]
+USER chal
+CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:./prisonbreak"]

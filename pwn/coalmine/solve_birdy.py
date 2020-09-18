@@ -25,7 +25,7 @@ def getp():
             #                 break *0x080493b1
         else:
             #p = process('./coalmine')
-            p = remote('localhost',8000)
+            p = remote('localhost',5000)
     else:
         p = remote('pwn.red.csaw.io', 5005)
     return p

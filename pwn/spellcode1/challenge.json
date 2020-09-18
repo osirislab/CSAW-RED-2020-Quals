@@ -7,5 +7,5 @@
     "points":100,
     "files":["level_1_spellcode", "level_1_spellcode.c"],
     "box": "pwn.red.csaw.io",
-    "internal_port": "8000"
+    "internal_port": 5000
 }
