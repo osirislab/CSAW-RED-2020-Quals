@@ -1,8 +1,9 @@
 {
-    "name": "Back to the Future",
-    "category": "misc",
-    "description": "Where we're going...",
-    "flag": "flag{one.21_gigawatts!??!}",
-    "points": 50,
-    "files": ["backtothefuture.docx"]
+  "name": "Back to the Future",
+  "category": "misc",
+  "description": "Where we're going...",
+  "flag": "flag{one.21_gigawatts!??!}",
+  "box": "web.red.csaw.io",
+  "points": 50,
+  "files": ["backtothefuture.docx"]
 }
