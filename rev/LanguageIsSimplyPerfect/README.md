@@ -9,6 +9,7 @@ A source code reversing challenge written in ANSI Common LISP. The solver needs 
 
 
 # Challenge code to show:
+
     (defun &(~)(if(< ~ |)~(+ (&(- ~ 1))(&(- ~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
 
 
@@ -71,7 +72,7 @@ In compressed form, removing unnecessary whitespace it becomes:
 
 where we can further obscure the variable 'n' as '\~' to get:
 
-        (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
+        (defun &(~)(if(< ~ 2)~(+ (&(- ~ 1))(&(- ~ 2)))))
 
 
 Calling the function with the value '30' gives:
@@ -120,19 +121,23 @@ We can then plug this into the '&' function call such as:
 
 
 Putting the two parts together we get:
+
 1. the compressed function definition:
-        (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))
+
+        (defun &(~)(if(< ~ 2)~(+ (&(- ~ 1))(&(- ~ 2)))))
 
 2. the compressed code calling of the function with the obscured number 30:
+
         (&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
 
 resulting in the code string:
-        (defun &(\~)(if(< \~ 2)\~(+ (&(- \~ 1))(&(- \~ 2)))))(&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
+
+        (defun &(~)(if(< ~ 2)~(+ (&(- ~ 1))(&(- ~ 2)))))(&(*(let((% 2)(@ 3))(* % @))(let((^ 2)(! 3))(+ ^ !))))
 
 
 In accordance with the challenge question we then replace the number '2' with '|' and the number '3' with '$' we get as the challenge code:
 
-        (defun &(\~)(if(< \~ |)\~(+ (&(- \~ 1))(&(- \~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
+        (defun &(~)(if(< ~ |)~(+ (&(- ~ 1))(&(- ~ |)))))(&(*(let((% |)(@ $))(* % @))(let((^ |)(! $))(+ ^ !))))
 
 Of course this code does not run as is since the two masking symbols '|' and '$' will have to be replaced with the correct integers first in order to run the code.
 
