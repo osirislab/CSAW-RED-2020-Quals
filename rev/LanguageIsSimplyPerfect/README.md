@@ -14,9 +14,9 @@ A source code reversing challenge written in ANSI Common LISP. The solver needs 
 
 # Challenge public text:
 
-"During our CS archealogy quest we stumbled across this partially corrupted magnetic tape that seems to contain some code of the ancients. Appearently during the read-out two numbers have been replaced with the non-excuting characters '|'' and '$'. Which integers do these two need to become to make the code return the value 832040?"
+"During our CS archaeology quest we stumbled across this partially corrupted magnetic tape that seems to contain some code of the ancients. Apparently during the read-out two numbers have been replaced with the non-executing characters '|'' and '$'. Which integers do these two need to become to make the code return the value 832040?"
 
-Write the answer as flag{a,b} where a is the integer representing '|' and b is the integer representing '$'.
+Write the answer as flag{a,b} where “a” is the integer representing '|' and “b” is the integer representing '$'.
 
 
 # Deployment
