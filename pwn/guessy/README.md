@@ -1,11 +1,11 @@
-# helpme
+# guessy
 
 > Category: pwn
-> Suggested Points: 50
-> Distribute: helpme
+> Suggested Points: 100
+> Distribute: guessy
 
 # Description
-> Detailed description as it would need to be explained to other lab members
+> Buffer overflow to win function with args
 
 <INSERT>
 
@@ -14,12 +14,12 @@
 
 <INSERT>
 
-# Flag
+# Flag - flag{w0w_R_y0u_A_m1nD_r34D3r?}
 
 <INSERT>
 
 # Solution
-> As detailed as possible description of the solution. Not just the solver script. As full a description as possible of the solution for the challenge.
+> Overflow the buffer and get the address of win function along with three args on the stack in the proper order. 
 
 
 # Potential Breakage

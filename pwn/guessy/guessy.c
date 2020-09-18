@@ -3,7 +3,7 @@
 
 #define FLAGBUF 40
 #define INPUTBUF 32
-#define OOPS 64
+#define OOPS 72
 
 void all_I_do_is_win(int no, int matter, int what) {
 

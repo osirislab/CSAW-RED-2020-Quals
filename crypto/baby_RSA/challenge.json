@@ -3,7 +3,6 @@
     "category": "crypto",
     "description": "RSA, Baby!",
     "flag": "flag{really_s1ck_algor1thm}",
-    "points": 50,
-    "files": ["babyrsa.py", "output.txt"],
-    "box": "crypto.red.csaw.io"
+    "points": 100,
+    "files": ["babyrsa.py", "output.txt"]
 }
