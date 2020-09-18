@@ -1,7 +1,7 @@
 {
     "name": "concrete_trap",
     "category": "rev",
-    "description": "I put my valuables behind a perfect knowledge lock. Don't bother.",
+    "description": "I put my valuables behind a perfect knowledge lock. Don't bother.\n `nc {box} {port}`",
     "flag": "flag{symb0l1c_v1ct0r13s_4r3_jUst_4s_g00d}",
     "points": 100,
     "box": "rev.red.csaw.io",

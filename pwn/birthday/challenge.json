@@ -1,7 +1,7 @@
 {
     "name": "birthday",
     "category": "pwn",
-    "description": "I can never remember my friends birthdays, so I `GOT` myself a program to do it.",
+    "description": "I can never remember my friends birthdays, so I `GOT` myself a program to do it.\n `nc {box} {port}`",
     "flag": "flag{u_g0t_my_fl4g}",
     "points": 150,
     "box": "pwn.red.csaw.io",

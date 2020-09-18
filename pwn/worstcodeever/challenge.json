@@ -1,7 +1,7 @@
 {
     "name": "worstcodeever",
     "category": "pwn",
-    "description": "my friend writes some bad code",
+    "description": "my friend writes some bad code\n `nc {box} {port}`",
     "flag": "flag{d03s_s0urc3_3v3n_h3lp}",
     "points": 250,
     "box": "pwn.red.csaw.io",
