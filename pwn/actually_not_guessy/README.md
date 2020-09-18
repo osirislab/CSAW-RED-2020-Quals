@@ -1,8 +1,8 @@
-# guessy
+# actually_not_guessy
 
 > Category: pwn
 > Suggested Points: 100
-> Distribute: guessy
+> Distribute: actually_not_guessy
 
 # Description
 > Buffer overflow to win function with args
@@ -14,7 +14,8 @@
 
 <INSERT>
 
-# Flag - flag{w0w_R_y0u_A_m1nD_r34D3r?}
+# Flag
+> flag{w0w_R_y0u_A_m1nD_r34D3r?}
 
 <INSERT>
 

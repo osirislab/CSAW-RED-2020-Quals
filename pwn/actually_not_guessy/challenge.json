@@ -1,5 +1,5 @@
 {
-  "name": "guessy",
+  "name": "Actually not guessy",
   "category": "pwn",
   "author": "Kaitlyn",
   "description": "No-one has ever guessed my favorite numbers. Can you? \n\n`nc {box} {port}`",
@@ -7,5 +7,5 @@
   "internal_port": 5000,
   "box": "pwn.red.csaw.io",
   "flag": "flag{w0w_R_y0u_A_m1nD_r34D3r?}",
-  "files": ["guessy"]
+  "files": ["actually_not_guessy"]
 }
