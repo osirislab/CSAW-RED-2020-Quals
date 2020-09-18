@@ -2,7 +2,7 @@
     "name":"Feast",
     "category":"pwn",
     "author":"Kaitlyn with testing from N4T_20",
-    "description":"We've prepared a special meal for you. You just need to find it. `nc {box} {port}`",
+    "description":"We've prepared a special meal for you. You just need to find it. (This is a 32 bit program) `nc {box} {port}`",
     "flag":"flag{3nj0y_7h3_d1nN3r_B16_w1Nn3r!}",
     "points":25,
     "files":["feast", "feast.c"],
