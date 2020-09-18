@@ -1,7 +1,8 @@
 {
   "name": "unary, binary, ...",
   "category": "crypto",
-  "description": "Rock, Paper, Sissor....\nunary, binary, ....",
+  "author": "N4T_20",
+  "description": "Sean Sears, the international Rock, Paper, Scissors champion, gives his adoring fans a thumbs-up after every bout. His grueling daily training routine starts with unary exercises, then progresses to binary, and then...",
   "flag": "flag{n1c3_RPS_sk1llz}",
   "points": 100,
   "files": ["challenge.pdf"],
