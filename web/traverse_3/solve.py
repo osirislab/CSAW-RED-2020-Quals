@@ -2,7 +2,7 @@ import requests
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('host', default='localhost', nargs='?')
+parser.add_argument('host', default='web.red.csaw.io', nargs='?')
 parser.add_argument('port', default='5000', nargs='?')
 args = parser.parse_args()
 
