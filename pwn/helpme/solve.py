@@ -5,8 +5,8 @@ import sys
 import string
 import time
 
-context.log_level = 'DEBUG'
-context.terminal = ['/usr/bin/termite', '-e']
+#context.log_level = 'DEBUG'
+#context.terminal = ['/usr/bin/termite', '-e']
 
 if len(sys.argv) == 3:
     p = remote(sys.argv[1], int(sys.argv[2]))

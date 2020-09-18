@@ -9,14 +9,6 @@ void all_I_do_is_win(int no, int matter, int what) {
 
 	char buf[FLAGBUF];
 
-	FILE *f = fopen("flag.txt","r");
-	if (f == NULL) {
-		printf("If you're seeing this, the flag file is missing. Please let an admin know!\n");
-		exit(0);
-	}
-
-	fgets(buf,FLAGBUF,f);
-
 	if (no != 0x600DC0DE){
     printf("Not quite.\n");
     return;
@@ -32,6 +24,13 @@ void all_I_do_is_win(int no, int matter, int what) {
     return;
 	}
 
+	FILE *f = fopen("flag.txt","r");
+	if (f == NULL) {
+		printf("If you're seeing this, the flag file is missing. Please let an admin know!\n");
+		exit(0);
+	}
+
+	fgets(buf,FLAGBUF,f);
 	puts(buf);
 	exit(0);
 }

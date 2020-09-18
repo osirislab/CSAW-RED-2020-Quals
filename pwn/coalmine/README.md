@@ -1,7 +1,7 @@
 # coalmine
 
 > Category: pwn
-> Suggested Points: 75
+> Suggested Points: 125
 > Distribute: coalmine
 
 # Description

@@ -3,7 +3,7 @@
   "category": "pwn",
   "author": "Kaitlyn",
   "description": "This bird will definitely protect me down in the mine. \n\n`nc {box} {port}`",
-  "points": 100,
+  "points": 125,
   "internal_port": 5000,
   "box": "pwn.red.csaw.io",
   "flag": "flag{H0w_d1d_U_g37_pA5t_mY_B1rD???}",
