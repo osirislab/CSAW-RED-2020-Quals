@@ -14,4 +14,5 @@ COPY templates templates
 
 RUN chown www:www -R .
 
+USER www
 CMD gunicorn -b 0.0.0.0:5000 -w 8 app:app
