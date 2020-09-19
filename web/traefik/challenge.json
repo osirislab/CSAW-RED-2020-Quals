@@ -1,7 +1,7 @@
 {
   "name": "Traefik",
   "description": "hint: Try to learn how traefik routes requests.\n\nhttp://{box}:{port}",
-  "points": 300,
+  "points": 250,
   "internal_port": 5000,
   "box": "web.red.csaw.io",
   "category": "web",
