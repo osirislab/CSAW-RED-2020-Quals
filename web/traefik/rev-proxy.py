@@ -20,7 +20,7 @@ def route_all(path='index.html'):
     if host == 'flag':
         return flag
 
-    if host != 'web.red.chal.csaw.io':
+    if host != 'web.red.csaw.io':
         return '404 page not found', 404
 
     return render_template(path)
