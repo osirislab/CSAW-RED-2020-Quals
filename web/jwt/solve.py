@@ -1,14 +1,14 @@
 import requests
 import jwt
 
-LOCAL = True
+LOCAL = False
 
 if LOCAL:
     HOST="http://localhost"
     PORT="5000"
 else:
     HOST="http://web.red.csaw.io"
-    PORT=""
+    PORT="5013"
 
 BASE_URL = HOST + ':' + PORT
 
@@ -33,7 +33,6 @@ def solve():
     flag = resp.text
 
     print(flag)
-
 
 if __name__ == "__main__":
     solve()
