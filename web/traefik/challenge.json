@@ -5,6 +5,6 @@
   "internal_port": 5000,
   "box": "web.red.csaw.io",
   "category": "web",
-  "flag": "flag{flag{81rD5_@RnT_r3@1!!!!!}}",
+  "flag": "flag{81rD5_@RnT_r3@1!!!!!}",
   "files": ["docker-compose.yml"]
 }
