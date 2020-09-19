@@ -1,8 +1,14 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_from_directory
 from flag import flag
+import os
 import requests
 
 app = Flask(__name__)
+
+
+@app.route('/static/<path:path>')
+def serve_da_static(path):
+    return send_from_directory(os.path.join(os.getcwd(), 'static'), path)
 
 
 @app.route('/')
@@ -19,6 +25,8 @@ def route_all(path='index.html'):
 
     if host == 'flag':
         return flag
+
+    print(host)
 
     if host != 'web.red.csaw.io:5006':
         return '404 page not found', 404
