@@ -62,6 +62,9 @@ def get_file(filename):
     except AttributeError:
         # no token set
         return "401 unauthorized: no token set", 401
+    except jwt.exceptions.DecodeError:
+        # unable to decode token, bad token
+        return "401 unauthorized: invalid token", 401
 
     # check if we have access for file
     if json['filename'] == filename:
