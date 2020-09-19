@@ -2,4 +2,4 @@
 
 echo './solve.sh [challenge ip]'
 
-curl http://${1:-localhost}:5000 -H 'Host:flag'
+curl http://${1:-localhost} -H 'Host:flag'
