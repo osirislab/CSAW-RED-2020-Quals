@@ -1,0 +1,12 @@
+{
+  "name": "jwt",
+  "category": "web",
+  "author": "jangui",
+  "description": "you'll never get access to the flag! \n\n[http://{box}:{port}](http://{box}:{port})",
+  "points": 200,
+  "internal_port": 5000,
+  "box": "web.red.csaw.io",
+  "flag": "flag{jwt_t0o0oo00ooo000ookens}",
+  "files": ["src/app.py"]
+}
+
