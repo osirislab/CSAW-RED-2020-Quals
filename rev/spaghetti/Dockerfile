@@ -15,4 +15,4 @@ RUN chown -R root:spaghetti /home/spaghetti && \
     chmod 555 spaghetti
 
 USER spaghetti
-CMD ["socat", "-T60", "TCP-LISTEN:8000,reuseaddr,fork","EXEC:/home/spaghetti/spaghetti"]
+CMD ["socat", "-T60", "TCP-LISTEN:5000,reuseaddr,fork","EXEC:/home/spaghetti/spaghetti"]
