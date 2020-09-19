@@ -14,4 +14,4 @@ COPY templates templates
 
 RUN chown www:www -R .
 
-CMD ["supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+CMD gunicorn -b 0.0.0.0:5000 -w 8 app:app
