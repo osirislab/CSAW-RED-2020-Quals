@@ -11,8 +11,10 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY app.py app.py
 COPY flag.txt flag.txt
 COPY templates templates
+COPY entrypoint.sh /entrypoint.sh
+COPY initdb.py initdb.py
 
 RUN chown www:www -R .
 
 USER www
-CMD gunicorn -b 0.0.0.0:5000 -w 8 app:app
+CMD /entrypoint.sh
