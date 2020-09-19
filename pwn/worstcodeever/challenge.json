@@ -6,5 +6,5 @@
     "points": 250,
     "box": "pwn.red.csaw.io",
     "internal_port": 8000,
-    "files": ["worstcodeever", "worstcodeever.c", "Makefile"]
+    "files": ["worstcodeever", "worstcodeever.c", "Makefile", "libc-2.27.so"]
 }
