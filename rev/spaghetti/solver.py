@@ -35,8 +35,7 @@ with open("generated.c", "w") as fd:
 #p = subprocess.Popen(['./spaghetti'], stdin=subprocess.PIPE)
 #print(p.communicate(input=PWD)[0])
 
-r = remote("rev.red.csaw.io", 5001)
-conn.recvline()
+conn = remote("rev.red.csaw.io", 5001)
 conn.send(PWD)
 print(conn.recvline())
 conn.close()
