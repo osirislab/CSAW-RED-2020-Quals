@@ -1,0 +1,11 @@
+{
+    "name":"Level 2 Spellcode",
+    "category":"pwn",
+    "author": "N4T_20",
+    "description":"Level up your spellcoding! No source code this time. `nc {box} {port}`",
+    "flag":"flag{n1c3_h4nd-cr4f73d_sp3llc0d3}",
+    "points":175,
+    "files":["level_2_spellcode"],
+    "box": "pwn.red.csaw.io",
+    "internal_port": 5000
+}
