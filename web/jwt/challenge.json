@@ -6,7 +6,7 @@
   "points": 150,
   "internal_port": 5000,
   "box": "web.red.csaw.io",
-  "flag": "flag{jwt_t0o0oo00ooo000ookens}",
+  "flag": "flag{n0_fr33_acc3es}",
   "files": ["src/app.py"]
 }
 
