@@ -6,6 +6,6 @@
     "flag":"flag{3v3ry_CTF_t34m_15_4_p4r7y}",
     "points":250,
     "files":["partycreation.c", "partycreation", "libc-2.27.so"],
-    "box": "pwn.chal.csaw.io",
+    "box": "pwn.red.csaw.io",
     "internal_port": 5000
 }
