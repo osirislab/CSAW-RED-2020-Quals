@@ -4,7 +4,7 @@ solver.py
 
     Regenerates source and sends correct string back to program.
 """
-import subprocess
+from pwn import *
 
 # change if host processor is different
 PWD = b"CPU:GenuineIntel"
@@ -32,5 +32,11 @@ final_code = "".join([elem for elem in code])
 with open("generated.c", "w") as fd:
     fd.write(final_code)
 
-p = subprocess.Popen(['./spaghetti'], stdin=subprocess.PIPE)
-print(p.communicate(input=PWD)[0])
+#p = subprocess.Popen(['./spaghetti'], stdin=subprocess.PIPE)
+#print(p.communicate(input=PWD)[0])
+
+r = remote("rev.red.csaw.io", 5001)
+conn.recvline()
+conn.send(PWD)
+print(conn.recvline())
+conn.close()
