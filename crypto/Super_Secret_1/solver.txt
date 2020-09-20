@@ -1,0 +1,7 @@
+ciphertext = "20-20-20-20-20-20-53-10-10-17-17-1a-12-08-06-48-45-17-16-04-10-17-17-54-03-04-10-01-12-1b-01-01-59-52-03-18-12-02-18-31-25-1a-07-3a-21-00-00-34-18-3a-37-1a-54-50-0e"
+encodedtext = "SECRET username: ceaser password: flag{C@nt_Bre@k_Th1$}"
+
+key = secret
+
+https://www.browserling.com/tools/xor-decrypt (outputs plain text instead of hex) - other online XOR works, but output hex of ascii usually
+
