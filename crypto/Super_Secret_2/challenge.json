@@ -1,0 +1,8 @@
+{
+  "name": "Super Secret 2",
+  "category": "crypto",
+  "description": "Dang! Someone figured out my key! Well I changed the key so no one else can break it. 3d-2a-34-33-3c-3a-4f-02-12-1c-1c-01-16-0c-1c-54-4f-14-04-18-1d-0a-05-41-09-0f-1c-04-16-16-1c-0b-4d-41-1f-02-0e-10-1a-2a-5d-0c-02-13-10-1a-16-28-35-11-1c-5f-02-06-11-31-5f-15-12-1a-1b-1d-46-15-00-13",
+  "flag": "flag{S3curity_Thr0ugh_0bscur1ty}",
+  "points": 100,
+  "files": ["challenge.txt"]
+}

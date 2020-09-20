@@ -1,0 +1,13 @@
+ciphertext = "34-30-26-21-36-33-55-10-00-11-15-1b-04-1e-10-5d-55-06-16-17-14-10-17-53-07-06-06-16-04-17-15-11-5f-53-1f-0b-14-02-08-3b-56-18-55-00-15-38-32-55-43-06-38-26-56-18-16-15-44-11-0a-19-6d"
+encodedtext = "SECRET username: ceaser password: flag{A1m0st_G00d_S3kur1ty}"
+
+key = guessguestguesuguesvgueswguesxguesygueszguesaguesbguescguesd
+
+https://www.browserling.com/tools/xor-decrypt (outputs plain text instead of hex) - other online XOR works, but output hex of ascii usually
+The 'key' here is that the key was changed but not much of the encoded text. So can reverse engineer the key by running the previous XOR challenge plain text with this one.
+This also introduces a poor man's 'counter mode' by incrementing the final character. This should increase the difficulty, but still have a similar approach as challenge 2.
+If neither challenge one or two were completed this might still be possible to guess 'guess' as that word is in the challenge text, but would be more difficult. If only
+'guess' is used as the key, the decryption looks like:
+SECRET usbrnamc: cedser tasswdrd: llag{H1m0sf_G00u_S3ker1tyj
+
+
