@@ -1,7 +1,7 @@
 {
     "name": "spaghetti",
     "category": "rev",
-    "description": "Due to technical difficulties, we can only give you the source our intern wrote. We told them to ensure they were using secure coding standards, but they ended up with this... `nc {box} {port}'",
+    "description": "Due to technical difficulties, we can only give you the source our intern wrote. We told them to ensure they were using secure coding standards, but they ended up with this... `nc {box} {port}`",
     "flag": "flag{s0m3b0dy_t0ucha_my_spagh3tt}",
     "points": 200,
     "box": "rev.red.csaw.io",
