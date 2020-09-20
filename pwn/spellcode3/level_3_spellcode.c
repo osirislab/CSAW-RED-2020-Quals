@@ -61,13 +61,13 @@ void init(){
     //int protection_result = mprotect(&shellcode, BUFSIZE, PROT_EXEC | PROT_READ | PROT_WRITE);
     //printf("protection result: %d",protection_result);
     //printf("Error number: %s", strerror(errno)); // https://www.gnu.org/software/libc/manual/html_node/Error-Messages.html
-    strncpy(spellcode, "\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x48\x83\xec\x08\xe9\x13\xeb\xdf\xff\x00",40);
+    strncpy(spellcode, "\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x48\x83\xec\x08\xe9\x0e\xeb\xdf\xff\x00",40);
         //\xff\xff\xdf\xeb\xd5\x00",40);
         //\x90\x90\x90\x90\x90\x00",40);
 }
 
 void runGame(){
-    printf("-----------------------");
+    printf("----------------------\n");
     printf("Choose a spell to cast:\n");
     printf("   1)   Lightning Bolt\n");
     printf("   2)   Dispel Magic\n");

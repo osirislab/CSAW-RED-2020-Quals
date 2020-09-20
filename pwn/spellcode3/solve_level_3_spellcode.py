@@ -14,7 +14,6 @@ if local:
             break runGame
             continue
             ''')
-        # *0x4009c6: countershell
     else:
         #p = process('./level_3_spellcode')
         p = remote('localhost',5000)
@@ -28,7 +27,6 @@ def do_a_write(offset, value):
     p.send(chr(value))# x5f to countershell() # \xb8 to init
 
 def change_jump_to_counterspell():
-    #do_a_write(26, 0x90)
     do_a_write(36, 0x5f)
 
 def change_initial_code_to_jump_to_end():
