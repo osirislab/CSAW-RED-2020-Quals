@@ -4,5 +4,6 @@
   "description": "Shoot! Someone made a lucky guess! Doing some research it looks like i need a 'mode' to make it super-duper secret. 34-30-26-21-36-33-55-10-00-11-15-1b-04-1e-10-5d-55-06-16-17-14-10-17-53-07-06-06-16-04-17-15-11-5f-53-1f-0b-14-02-08-3b-56-18-55-00-15-38-32-55-43-06-38-26-56-18-16-15-44-11-0a-19-6d",
   "flag": "flag{A1m0st_G00d_S3kur1ty}",
   "points": 150,
-  "files": ["challenge.txt"]
+  "files": ["challenge.txt"],
+  "box": "crypto.red.csaw.io"
 }
