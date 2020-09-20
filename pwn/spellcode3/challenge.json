@@ -1,0 +1,11 @@
+{
+    "name":"Level 3 Spellcode",
+    "category":"pwn",
+    "author": "N4T_20",
+    "description":"Pit your shellcoding skills against an admin! May the best spellcoder win. `nc {box} {port}`",
+    "flag":"flag{pu7_0n_y0ur_m1rr0r_5h4d35_4nd_t4k3_a_b0w_5p3llc0d3r}",
+    "points":400,
+    "files":["level_3_spellcode"],
+    "box": "pwn.red.csaw.io",
+    "internal_port": 5000
+}
