@@ -16,7 +16,7 @@ All information included in challenge.txt.
 
 # Flag
 
-`flag{C@nt_Bre@k_Th1$}``
+`flag{C@nt_Bre@k_Th1$}`
 
 # Solution
 > As detailed as possible description of the solution. Not just the solver script. As full a description as possible of the solution for the challenge.
