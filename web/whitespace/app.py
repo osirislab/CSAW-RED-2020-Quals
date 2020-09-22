@@ -16,16 +16,16 @@ DB_FILE = '/tmp/db.db'
 
 @app.route('/')
 def index():
+    # If its me thats logged in, then
+    # I'll want to see the flag.
+    if session['username'] == 'admin':
+        return render_template('flag.html')
+
     # Make sure a user is logged in!
     if 'username' not in session:
         # If they aren't we'll redirect them
         # to the login page.
         return redirect('/login')
-
-    # If its me thats logged in, then
-    # I'll want to see the flag.
-    if session['username'] == 'admin':
-        return render_template('flag.html')
 
     # For regular logged in users, we'll
     # just show them the index page.
