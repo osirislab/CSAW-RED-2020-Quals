@@ -1,7 +1,7 @@
 {
   "name": "big world",
   "category": "misc",
-  "description": "Help! My friend stole my gold and hid my writable book somewhere on the server! Can you help me find it?",
+  "description": "Someone took my gold and a secret book with the flag! Can you help me find it?",
   "points": 150,
   "box": "web.red.csaw.io",
   "flag": "flag{techno_vs_dream}",
