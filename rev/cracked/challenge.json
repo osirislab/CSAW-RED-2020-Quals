@@ -1,7 +1,7 @@
 {
     "name": "cracked",
     "category": "rev",
-    "description": "i just want to be happy",
+    "description": "i just want to be happy.",
     "flag": "flag{m0m:w3_h4v3_v1rtu4l1z3r_4t_h0m3}",
     "points": 300,
     "box": "rev.red.csaw.io",
