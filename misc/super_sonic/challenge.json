@@ -1,0 +1,10 @@
+{
+  "name": "Super Sonic",
+  "author": "Manan",
+  "category": "misc",
+  "description": "Use some stego skills to retrieve the flag!",
+  "flag": "flag{py1h0n_1s_c00l}",
+  "box": "web.red.csaw.io",
+  "points": 75,
+  "files": ["supersonic.zip"]
+}
