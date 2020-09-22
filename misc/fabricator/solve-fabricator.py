@@ -6,7 +6,7 @@ from pwn import *
 from time import sleep
 import hashlib
 
-local = True
+local = False
 debug = False
 if local:
     if debug:
@@ -19,7 +19,7 @@ if local:
         #p = process('./fabricator')
         p = remote('localhost',5000)
 else:
-    p = remote('red.ctf.csaw.io', 8000)
+    p = remote('web.red.csaw.io', 5012)
 
 p.recvuntil("prefix:\n\n")
 prefix = p.recv(64)
