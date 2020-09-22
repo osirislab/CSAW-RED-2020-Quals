@@ -1,4 +1,4 @@
-# Alert
+# Super_Sonic
 
 > Category: misc  
 > Suggested Points: 75
@@ -7,7 +7,7 @@
 > A basic stegonography challenge. Goal is to find the flag.
 
 # Deployment
-> Release documents.zip
+> Release super_sonic.zip
 
 # Flag
 > flag{py1h0n_1s_c00l}
