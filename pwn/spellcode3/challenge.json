@@ -2,7 +2,7 @@
     "name":"Level 3 Spellcode",
     "category":"pwn",
     "author": "N4T_20",
-    "description":"Pit your shellcoding skills against an admin! May the best spellcoder win. `nc {box} {port}`",
+    "description":"Pit your shellcoding skills against an admin! May the best spellcoder win. `nc {box} {port}` (NOTE: if you experience issues writing to offset `0` in the shellcode array, try writing to offsets `1` and later. The challenge is solvable without needing that first byte. Edit posted Wednesday morning.)",
     "flag":"flag{pu7_0n_y0ur_m1rr0r_5h4d35_4nd_t4k3_a_b0w_5p3llc0d3r}",
     "points":350,
     "files":["level_3_spellcode"],
