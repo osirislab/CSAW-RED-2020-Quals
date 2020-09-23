@@ -3,7 +3,7 @@
     "category": "rev",
     "description": "Greetings, employee #9458. Please ensure that our DRM software is sufficiently secure. \n\n `nc rev.red.csaw.io [port]`",
     "flag": "flag{fr3e_n_0p1n_so@rce_xd}",
-    "points": 50,
+    "points": 100,
     "box": "rev.red.csaw.io",
     "internal_port": 5000,
     "files": ["proprietary"]
