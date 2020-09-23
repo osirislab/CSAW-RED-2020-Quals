@@ -1,0 +1,11 @@
+{
+    "name":"mindreader",
+    "category":"crypto",
+    "author":"N4T_20",
+    "description":"I'm thinking of a flag! Can you read my mind? I swear this challenge isn't guessy. NOTE: when submitting the flag, do not include any padding bytes that were in the decrypted plaintext. `nc {box} {port}`",
+    "flag":"flag{3v3ry_71m3_y0u_th1nk_4_7h0u9h7,u53_4_n3w_IV}",
+    "points":250,
+    "files":["server.py"],
+    "box": "crypto.red.csaw.io",
+    "internal_port": 5000
+}
