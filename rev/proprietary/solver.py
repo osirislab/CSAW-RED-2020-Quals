@@ -1,6 +1,6 @@
 from pwn import *
 
-p = process('./prop_remote')
+p = process('./proprietary')
 #p = remote('rev.red.csaw.io', 5000)
 print(p.recvuntil(':'))
 p.sendline('mvsvds~l}tvem&xxbcabfai{')

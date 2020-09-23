@@ -19,6 +19,21 @@ int trademark(char password[]) {
 
 }
 
+void give_flag()
+{
+    char buf[29];
+    FILE *f;
+    f = fopen("flag.txt", "r");
+    if (f != NULL)
+    {
+        fgets(buf, sizeof(buf), f);
+        printf("Flag: %s\n", buf);
+    } else
+    {
+        printf("Missing flag.txt. If you're running this on the server, please message an admin\n");
+    }
+}
+
 int main() {
 
    char password[25];
@@ -31,10 +46,11 @@ int main() {
    if(trademark(password)) {
       puts("Thank you for using™ FlagGiver™ Enterprises' FlagGiver™!\n");
       puts("Here is your FlagGiver™ Flag™! Enjoy™!\n");
-      puts("{flag goes here}");
+      give_flag();
    } else {
       puts("Sorry™, that was the Wrong™ Password™.");
    }
    return 0;
 }
+
 
