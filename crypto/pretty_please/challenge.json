@@ -1,0 +1,11 @@
+{
+    "name":"prettyplease",
+    "category":"crypto",
+    "author":"N4T_20",
+    "description":"Applications for a cryptography flag are now open! Application deadline: September 27th, 20:00 UTC. `nc {box} {port}`",
+    "flag":"flag{w3_n33d_m0r3_1n739r17y_1n_7h3_r3v13w_pr0c355}",
+    "points":225,
+    "files":["server.py"],
+    "box": "crypto.red.csaw.io",
+    "internal_port": 5000
+}
