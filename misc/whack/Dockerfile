@@ -2,9 +2,7 @@ FROM debian:stretch
 
 RUN apt update && apt install -y socat libc6-i386 libssl-dev && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -M chal
-
-WORKDIR /opt/chal
+WORKDIR /home/
 
 COPY whack200.py .
 
