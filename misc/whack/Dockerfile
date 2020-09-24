@@ -1,7 +1,6 @@
 FROM debian:stretch
 
 RUN apt-get update && apt-get install -y python3 python3-pip 
-RUN pip3 install pycryptodome
 RUN apt-get install -y socat && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /home/
