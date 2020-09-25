@@ -1,0 +1,11 @@
+{
+    "name":"otherplane",
+    "category":"misc",
+    "author":"N4T_20",
+    "description":"Your party's cleric was scrying on the admins and intercepted one of them casting a \"Contact Other Plane\" spell. See if you can make sense of this traffic, then report who they contacted here: \n`nc {box} {port}`",
+    "flag":"flag{m0r3_l1k3_c0n74c7_9l455_pl4n3}",
+    "points":175,
+    "files":["interception.data"],
+    "box": "web.red.csaw.io",
+    "internal_port": 5000
+}
