@@ -16,6 +16,12 @@ popping up that you lose if you whack. You also get less time to whack the
 mole. By level 10 you only have 0.6 seconds to pull it off (that still should 
 be slow enough for connections from Dubai to work.)
 
+We should give credit to Dan, but I want to do so in an announcement after 
+the competition closes just in case a write-up is on the web somewhere.
+Note that I could not find any Pink Elephant Unicorn CTF write-ups online.
+The CTFs were all held in person, and not linked to CTF Time. So I think 
+we should be pretty safe from cheating.
+
 # TODO
 
 Just needs to be tested once it's running in CTFd.
