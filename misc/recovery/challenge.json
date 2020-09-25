@@ -1,0 +1,11 @@
+{
+    "name":"recovery",
+    "category":"misc",
+    "author":"N4T_20",
+    "description":"Alice forgot her throwaway email address, but she has a packet capture of her traffic. Can you help her recover it? To get the flag, answer a question about this traffic on the server here: \n`nc {box} {port}`",
+    "flag":"flag{W1r3sh4rk,TCPfl0w,gr3p,57r1n95--7h3y'r3_4ll_f0r3n51c5_700l5}",
+    "points":50,
+    "files":["traffic.data"],
+    "box": "web.red.csaw.io",
+    "internal_port": 5000
+}
