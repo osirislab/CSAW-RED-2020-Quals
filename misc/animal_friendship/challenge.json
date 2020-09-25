@@ -1,0 +1,12 @@
+{
+    "name":"animal_friendship",
+    "category":"misc",
+    "author":"N4T_20",
+    "description":"The druid in your party is a fan of the animal friendship spell. To get the flag, track them down in this packet capture, then report who they befriended here: \n`nc {box} {port}`",
+    "flag":"flag{m4k1n9_f0r3n51c5_53c0nd_n47ur3}",
+    "hint":"If you think you have the solution but aren't getting the flag, send a message to an admin via the MailBot on Discord.",
+    "points":50,
+    "files":["animal_friendship.data"],
+    "box": "web.red.csaw.io",
+    "internal_port": 5000
+}
