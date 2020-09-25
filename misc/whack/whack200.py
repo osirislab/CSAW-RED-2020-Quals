@@ -163,7 +163,7 @@ def main():
 		mole_y = random.randint(0, height-1)
 		draw_face(board, padding, mole, mole_x, mole_y)
 		marker[mole_y][mole_x] = 'm'
-		print("1: marker = " + str(marker))
+		#print("1: marker = " + str(marker))
 
 		# Draw the squares on the board
 		horizontal = random.randint(0, min(level-1, len(horizontals)-1))
@@ -189,6 +189,8 @@ def main():
 				pass
 
 		# Check the input
+		#print("User input: row = " + str(row) + ", col = " + str(col))
+		#print("marker: " + str(marker))
 		missed = True
 		end = time.time()
 		if ((end - start) > max_time):
@@ -211,7 +213,7 @@ def main():
 			if (hit >= 10) and (level < 10):
 				level += 1
 				hit = 0
-				max_time = 10.25 - level
+				max_time = 10.6 - level # was 10.25 - level, want to allow more time for slow internet connections
 
 		# Check if the player has won
 		if score > 10000:
@@ -222,7 +224,7 @@ def main():
 				'|                     |\n'
 				'+---------------------+\n'
 				'\n'
-				'The flag is: flag{Wh4t3v3r_d1d_th3_p00r_m0l3_d0_t0_y0u?}\n')
+				'flag{Wh4t3v3r_d1d_th3_p00r_m0l3_d0_t0_y0u?}\n')
 			exit()
 
 #-----------------------------------------------------------------------------------------------------------------------------------

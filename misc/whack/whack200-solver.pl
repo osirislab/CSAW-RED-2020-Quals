@@ -8,23 +8,27 @@ $| = 1;
 
 my $socket = new IO::Socket::INET (
 	PeerHost => '127.0.0.1',
-	PeerPort => '9933',
+	PeerPort => '5000',
 	Proto => 'tcp',
 ) or die "Cannot create socket: $!\n";
 
-my $logfile = '/tmp/solve.log';
+#my $logfile = '/tmp/solve.log';
+my $logfile = './solve.log';
 open LOG, ">$logfile" or die "Cannot open $logfile for writing: $!\n";
 
 my $data = '';
 my $found = 0;
 while ($found < 2) {
 	my $buf;
-	$socket->recv($buf, 1024);
+	$socket->recv($buf, 1024); # 1024 may be too short
 	$data .= $buf;
+	my $len;
+	$len .= length($buf);
 	if (length($buf) < 1024) {
 		$found = process($data);
 		$data = '';
 	}
+	print LOG "length of buf = $len\n";
 }
 
 close LOG;
@@ -44,9 +48,12 @@ sub process
 	my $non_space = '';  # String that holds non-space
 	foreach my $line (@lines) {
 		print LOG "-->$line<--\n";
+		print LOG "found = $found\n";
 		if ($line =~ m/WINNER|Ouch/) {                  # Check for winner or ouch message
 			$found  = 2;
 		} elsif ($line =~ m/^Whack \(row col\)/) {      # Check for end of board
+			print LOG "Found end of board\n";
+			print LOG "End of board is at $line\n";
 			last;
 		} elsif ($line =~ m/^ *$/) {                    # Check for blank lines
 			$blank = 1;
@@ -82,6 +89,7 @@ sub process
 					$col++;
 				}
 				$found = 1;
+				print LOG "Found mole nose, line = $line ";
 			}
 		}
 	}
@@ -91,6 +99,7 @@ sub process
 	} else {
 		$data = "$row $col\n";
 		print LOG "\nMole is on $data";
+		sleep(0.1);
 		$socket->send($data);
 	}
 	return $found;

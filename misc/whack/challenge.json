@@ -1,0 +1,11 @@
+{
+    "name":"hack-a-mole",
+    "category":"misc",
+    "author":"N4T_20",
+    "description":"Welcome to Hack-a-Mole, the hacker version of Whack-a-Mole! Beat all the levels to claim your flag.\n`nc {box} {port}`",
+    "flag":"flag{Wh4t3v3r_d1d_th3_p00r_m0l3_d0_t0_y0u?}",
+    "points":250,
+    "files":[],
+    "box": "web.red.csaw.io",
+    "internal_port": 5000
+}
