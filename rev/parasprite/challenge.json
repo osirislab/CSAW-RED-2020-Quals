@@ -1,0 +1,9 @@
+{
+    "name": "parasprite",
+    "category": "rev",
+    "description": "This challenge is graciously contributed by Pacific Northwest National Laboratory. To convert their flag to our flag format, replace a string like `\"hello world\"` with `flag{hello world}` (keeping the space, no underscore) when submitting the flag. If you have any trouble with the flag submission, ping the MailBot on Discord.",
+    "flag": "flag{Ugh. Now I gotta go find a tr0mb0n3 >.<}",
+    "points": 200,
+    "box": "rev.red.csaw.io",
+    "files": ["parasprite.exe"]
+}
